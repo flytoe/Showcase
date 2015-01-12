@@ -26,26 +26,29 @@
         <script src="js/analytics.js"></script>
         <script src="http://code.jquery.com/jquery-2.0.3.min.js"></script>
         <script src="js/jquery.ascensor.min.js"></script>
+        <script src="js/jquery.easing.1.3.js"></script>       
 
         
     </head>
     <body>
         
         <div id="header">
-        Header
+            <div class="headerName"><p>PATRIC STERRANTINO</p></div>
+            <div class="navigation"><a>CONTACT</a></div>
         </div>
         
-        <div id="ascensorBuilding">
-			<div class="floor floor-1"><span class="text">Floor 1</span></div>
-			<div class="floor floor-2"><span class="text">Floor 2</span></div>
-			<div class="floor floor-3"><span class="text">Floor 3</span></div>
-			<div class="floor floor-4"><span class="text">Floor 4</span></div>
-			<div class="floor floor-5"><span class="text">Floor 5</span></div>
-			<div class="floor floor-6"><span class="text">Floor 6</span></div>
-			<div class="floor floor-7"><span class="text">Floor 7</span></div>
-		</div>
-
-		<nav>
+        <div id="Work">
+            <div class="floor floor-1"><span class="text">Floor 1</span></div>
+            <div class="floor floor-2"><span class="text">Floor 2</span></div>
+            <div class="floor floor-3"><span class="text">Floor 3</span></div>
+            <div class="floor floor-4"><span class="text">Floor 4</span></div>
+            <div class="floor floor-5"><span class="text">Floor 5</span></div>
+            <div class="floor floor-6"><span class="text">Floor 6</span></div>
+            <div class="floor floor-7"><span class="text">Floor 7</span></div>
+        </div>
+		
+        
+        <nav>
 			<ul class="links-to-floor">
 				<li><a>Floor 1</a></li>
 				<li><a>Floor 2</a></li>
@@ -56,46 +59,13 @@
 				<li><a>Floor 7</a></li>
 
 			</ul>
-			<ul class="prev-next-links">
-				<li class="prev" ><a>←</a></li>
-				<li class="next" ><a>→</a></li>
-			</ul>
+            
+			<div class="prev"></div>
+			<div class="next"></div>
 
 		</nav>
 
-		<script>
-			var ascensor = $('#ascensorBuilding').ascensor({ascensorFloorName:["Home", "Implementation", "HTML" , "Jquery" , "CSS", "Smartphone", "End", "Yaaay"], direction: [[0,0],[0,1],[0,2],[0,3],[0,4],[0,5],[0,6],[0,7]]});
-			var ascensorInstance = $('#ascensorBuilding').data('ascensor');
-			var floorAdded = false;
-			$(".add-floor").click(function(){
-				if(!floorAdded){
-				$('#ascensorBuilding').append('<div class="floor floor-8"><span class="text">This floor has been dynamically appended!</span></div>');
-				ascensorInstance.refresh();
-				$(this).text("Floor Added!");
-				floorAdded = true;
-				}
-			});
-				
-			$(".links-to-floor li").click(function(event, index) {
-				ascensorInstance.scrollToFloor($(this).index());
-			});
-			$(".links-to-floor li:eq("+ ascensor.data("current-floor") +")").addClass("selected");
-			ascensor.on("scrollStart", function(event, floor){
-				$(".links-to-floor li").removeClass("selected");
-				$(".links-to-floor li:eq("+floor.to+")").addClass("selected");
-			});
-			$(".prev").click(function() {
-				ascensorInstance.prev();
-			});
-				
-			$(".next").click(function() {
-				ascensorInstance.next();
-			});
-				
-			$(".direction").click(function() {
-				ascensorInstance.scrollToDirection($(this).data("direction"));
-			});	
-		</script>
+        <script src="js/PortfolioJS_old.js"></script>  
     
     </body>
 </html>
