@@ -74,6 +74,7 @@ body {
 
 .intro {
     background: url("img/work/intro.jpg") 50% 50% no-repeat !important;
+    background-size: cover; 
 }
 
 .work-1 {
@@ -153,7 +154,7 @@ box-sizing: border-box;
 
 .global-header .nav-item a {
     display: block;
-    color: #999;
+    color: #303030;
     line-height: 60px;
     padding: 0 20px;
     line-height: 61px;
@@ -164,7 +165,6 @@ box-sizing: border-box;
 .global-header .nav-logo {
     position: absolute;
     top: inherit;
-    left: 2px;
     display: block;
     color: #999;
     line-height: 60px;
@@ -195,6 +195,7 @@ img.absolute{
 .introText {
     background: rgba(250,250,250,0.9);
     padding: 20px;
+    padding-top: 25px;
     position: absolute;
     top: 50%;
     left: 50%;
@@ -228,10 +229,17 @@ img.absolute{
     cursor: default;
 }
 
-.fullText H1 {
+.fullText h1 {
+    color: black;
+    font-size: 36px;
+    text-align: center;
+}
+
+.fullText h2 {
     color: black;
     font-size: 24px;
     text-align: center;
+    margin-top: 30px;
 }
 
 .fullText p {
@@ -243,6 +251,7 @@ img.absolute{
     text-align: left;
     margin-left: auto;
     margin-right: auto;
+    margin-bottom: 25px;
 }
 
 .fullText p highlight {
@@ -250,4 +259,10 @@ img.absolute{
     background:#CAEFDE;
     padding: 4px 5px 4px 5px;
     margin: 0px 2px 0px 2px;
+}
+
+* Tabletts */
+@media only screen and (min-width: 760px) {
+	.reframe { max-width: 760px }
+…
 }

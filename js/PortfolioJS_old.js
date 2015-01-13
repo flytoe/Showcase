@@ -2,7 +2,7 @@
 var ascensor = $('#Work').ascensor({
     time: 250,
     easing: 'easeInOutCubic',
-    ascensorFloorName: ["Intro", "Work 1", "Work 2", "Work 3", "Work 4", "Work 5", "Contact"],
+    ascensorFloorName: ["Intro", "lighthouse", "prototyper", "Work 3", "Work 4", "Work 5", "Contact"],
     direction: 'x',
     swipeNavigation: true,
     keyNavigation: true,
@@ -34,7 +34,17 @@ var ascensorInstance = $('#Work').data('ascensor');
 			});
 
 //jQuery
+$(".next").click(function() { 
+    $(".fullText").fadeOut({
+        duration: 5,
+        easing: 'easeInOutCubic',  
+    });
+    $(".fullText").fadeIn({
+        duration: 150,
+        easing: 'easeInOutCubic',  
+    });
+});
+
 $(".introText").click(function() { 
-    //$( ".fullText" ).slideToggle();
-    $('body').scrollTo("#intro");
+    $('body').scrollTop( 300 );
 });
