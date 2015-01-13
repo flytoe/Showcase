@@ -1,5 +1,18 @@
-var ascensor = $('#Work').ascensor({ascensorFloorName:["Intro", "Work 1", "HTML" , "Jquery" , "CSS", "Smartphone", "End", "Yaaay", "Work 1 Description"], direction: [[0,0],[0,1],[0,2],[0,3],[0,4],[0,5],[0,6],[0,7],[1,1]]});
-			var ascensorInstance = $('#Work').data('ascensor');		
+//ANCESTOR
+var ascensor = $('#Work').ascensor({
+    time: 250,
+    easing: 'easeInOutCubic',
+    ascensorFloorName: ["Intro", "Work 1", "Work 2", "Work 3", "Work 4", "Work 5", "Contact"],
+    direction: 'x',
+    swipeNavigation: true,
+    keyNavigation: true,
+    jump: true,
+    loop: true
+
+});
+	
+
+var ascensorInstance = $('#Work').data('ascensor');		
 			$(".links-to-floor li").click(function(event, index) {
 				ascensorInstance.scrollToFloor($(this).index());
 			});
@@ -18,4 +31,10 @@ var ascensor = $('#Work').ascensor({ascensorFloorName:["Intro", "Work 1", "HTML"
 				
 			$(".direction").click(function() {
 				ascensorInstance.scrollToDirection($(this).data("direction"));
-			});	
+			});
+
+//jQuery
+$(".introText").click(function() { 
+    //$( ".fullText" ).slideToggle();
+    $('body').scrollTo("#intro");
+});
