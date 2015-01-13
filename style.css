@@ -16,7 +16,8 @@ time, mark, audio, video {
 	border: 0;
 	font-size: 100%;
 	font: inherit;
-	vertical-align: baseline
+	vertical-align: baseline;
+    list-style: none;
 }
 
 body {
@@ -71,42 +72,90 @@ body {
     transform: translateX(-50%) translateY(-50%)
 }
 
-ul {list-style: none;}
+.selected a {
+    color: white !important;
+    background:rgb(13,194,116);
+    background-position: 50px 20px;
+    
+}
 
+.selected a:hover {
+    color: white !important;
+    background-color: rgb(0,171,93);
+}
 
-.links-to-floor{
-    position: absolute;
-    top: 100px;
-    left: 20px}
+.global-header * {
+box-sizing: border-box;
+}
 
-/*.prev-next-links{position: absolute;top: 60px;right: 60px;}*/
-
-.direction-links li a{border-radius: 0;}
-
-.selected a{color: white;background:#4fade3;}
-
-.selected a:hover{color: white;background:#4fade3;}
-
-#header {
+.global-header {
     height: 60px;
+    background: #F9F9F9;
+    margin: 24px;
+    position: relative;
+    z-index: 1000;
+}
+
+.global-header nav ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: inline-block;
     width: 100%;
-    background-color: white;
-    position: fixed;
-    z-index: 1
+    font-size: 0;
+    line-height: 60px;
 }
 
-.headerName p{
-    margin: 24px 20px;               
-    color: black;
-    font-size: 12px;
-    float: left;
-    clear: both;
+.global-header nav li:hover {
+    background-color: #EEEEEE;
+}
+
+.global-header nav {
+    width: 100%;
+    text-align: right;
+}
+
+.global-header .nav-item {
+    display: inline-block;
+    font-family: 'proxima_nova_ltsemibold', Helvetica, Arial;
     font-weight: 500;
+    font-style: normal;
+    font-size: 12px;
+    font-size: 0.75rem;
+    text-transform: uppercase;
+    height: 60px;
+    vertical-align: top;
+    position: relative !important;
+    padding-left: 1px;
+    background: url("img/icon_divider.gif") 0 18px no-repeat;
 }
 
-.navigation {
-    margin: 24px 20px;               
-    color: black;
+.global-header .nav-item a {
+    display: block;
+    color: #999;
+    line-height: 60px;
+    padding: 0 20px;
+    line-height: 61px;
+    letter-spacing: 0.1em;
+    cursor: pointer;
+    }
+
+.global-header .nav-logo {
+    position: absolute;
+    top: inherit;
+    left: 2px;
+    display: block;
+    color: #999;
+    line-height: 60px;
+    padding: 0 20px;
+    line-height: 61px;
+    letter-spacing: 0.1em;
     font-size: 12px;
-    float: right;
+}
+
+.clearfix {
+}
+.clearfix:before, .clearfix:after {
+    content: "";
+    display: table;
 }
