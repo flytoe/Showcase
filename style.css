@@ -22,7 +22,7 @@ time, mark, audio, video {
 
 body {
     background-color: white;
-    font-family: "Helvetica Neue", Arial, Helvetica, sans-serif
+    font-family: 'Armata', sans-serif;
 }
 
 .prev {
@@ -31,7 +31,7 @@ body {
     width: 25px;
     position: absolute;
     left: 0px;
-    height: 100%
+    height: 70%
 }
 
 .prev:hover {
@@ -48,7 +48,7 @@ body {
     width: 25px;
     position: absolute;
     right: 0px;
-    height: 100%
+    height: 70%
 }
 
 .next:hover {
@@ -62,14 +62,18 @@ body {
 .floor .text {
     color: black;
     font-size: 40px;
-    font-weight: 500;
     text-align: center;
     position: absolute;
     top: 50%;
     left: 50%;
     -moz-transform: translateX(-50%) translateY(-50%);
     -webkit-transform: translateX(-50%) translateY(-50%);
-    transform: translateX(-50%) translateY(-50%)
+    transform: translateX(-50%) translateY(-50%);
+    cursor: default;
+}
+
+.floor-1 {
+    background: url("img/work/work01.jpg") 0px 0px no-repeat !important;
 }
 
 .selected a {
@@ -90,7 +94,7 @@ box-sizing: border-box;
 
 .global-header {
     height: 60px;
-    background: #F9F9F9;
+    background: rgba(250,250,250,0.9);
     margin: 24px;
     position: relative;
     z-index: 1000;
@@ -117,11 +121,8 @@ box-sizing: border-box;
 
 .global-header .nav-item {
     display: inline-block;
-    font-family: 'proxima_nova_ltsemibold', Helvetica, Arial;
-    font-weight: 500;
     font-style: normal;
     font-size: 12px;
-    font-size: 0.75rem;
     text-transform: uppercase;
     height: 60px;
     vertical-align: top;
@@ -158,4 +159,14 @@ box-sizing: border-box;
 .clearfix:before, .clearfix:after {
     content: "";
     display: table;
+}
+
+backgroundImage{
+    margin: 0 auto;
+    overflow:hidden;
+    position: relative;
+}
+
+img.absolute{
+    position:absolute;
 }
