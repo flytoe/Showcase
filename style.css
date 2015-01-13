@@ -154,11 +154,10 @@ box-sizing: border-box;
 
 .global-header .nav-item a {
     display: block;
-    color: #303030;
+    color: #333;
     line-height: 60px;
     padding: 0 20px;
     line-height: 61px;
-    letter-spacing: 0.1em;
     cursor: pointer;
     }
 
@@ -166,11 +165,10 @@ box-sizing: border-box;
     position: absolute;
     top: inherit;
     display: block;
-    color: #999;
+    color: #333;
     line-height: 60px;
     padding: 0 20px;
     line-height: 61px;
-    letter-spacing: 0.1em;
     font-size: 12px;
     cursor: pointer;
 }
