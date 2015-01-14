@@ -23,14 +23,15 @@ var ascensorInstance = $('#Work').data('ascensor');
 				$(".links-to-floor li:eq("+floor.to+")").addClass("selected");
 			});
 			
-            $(".prev").on('touchend click', function() {
+            $(".prev").on('click', function() {
 				ascensorInstance.prev();
             });
 			
-            $(".next").on('touchend click', function() {
+            $(".next").on('click', function() {
 				ascensorInstance.next();
 			});
 				
+
 			$(".direction").click(function() {
 				ascensorInstance.scrollToDirection($(this).data("direction"));
 			});
