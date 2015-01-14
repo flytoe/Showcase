@@ -23,11 +23,11 @@ var ascensorInstance = $('#Work').data('ascensor');
 				$(".links-to-floor li:eq("+floor.to+")").addClass("selected");
 			});
 			
-            $(".prev").on('touchstart click', function() {
+            $(".prev").on('touchend click', function() {
 				ascensorInstance.prev();
             });
 			
-            $(".next").on('touchstart click', function() {
+            $(".next").on('touchend click', function() {
 				ascensorInstance.next();
 			});
 				
