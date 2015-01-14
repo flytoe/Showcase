@@ -25,8 +25,8 @@ body {
     font-family: 'Armata', sans-serif;
 }
 
-.prev {
-    background: url(img/prev.png) no-repeat -25px 50%; 
+.prevArrow {
+    background: url(img/prev.svg) no-repeat -25px 50%; 
     height: 50px;
     width: 25px;
     position: absolute;
@@ -34,16 +34,16 @@ body {
     height: 70%
 }
 
-.prev:hover {
-	background: url(img/prev.png) no-repeat 0px 50%;
+.prevArrow:hover {
+	background: url(img/prev.svg) no-repeat 0px 50%;
 	-webkit-transition:all 0.2s ease-in-out;
 	-moz-transition:all 0.2s ease-in-out;
 	-transition:all 0.2s ease-in-out;
     cursor: pointer
 }
 
-.next {
-    background: url(img/next.png) no-repeat 0px 50%;
+.nextArrow {
+    background: url(img/next.svg) no-repeat 0px 50%;
     height: 50px;
     width: 25px;
     position: absolute;
@@ -51,8 +51,8 @@ body {
     height: 70%
 }
 
-.next:hover {
-	background: url(img/next.png) no-repeat -25px 50%;
+.nextArrow:hover {
+	background: url(img/next.svg) no-repeat -25px 50%;
     -webkit-transition:all 0.2s ease-in-out;
 	-moz-transition:all 0.2s ease-in-out;
 	-transition:all 0.2s ease-in-out;
@@ -263,4 +263,24 @@ img.absolute{
 @media only screen and (min-width: 760px) {
 	.reframe { max-width: 760px }
 …
+}
+
+.nextSlide {
+    background: url(img/next_big.svg) no-repeat 0px 50%;
+    height: 50px;
+    width: 50px;
+    position: absolute;
+    bottom: 20px;
+    border-radius: 100%;
+    margin-left: auto;
+    margin-right: auto;
+    left: 50%;
+}
+
+.nextSlide:hover {
+	background: url(img/next_big.svg) no-repeat -50px 50%;
+	-webkit-transition:all 0.2s ease-in-out;
+	-moz-transition:all 0.2s ease-in-out;
+	-transition:all 0.2s ease-in-out;
+    cursor: pointer
 }
