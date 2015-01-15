@@ -218,30 +218,6 @@ a:visited {
     text-align: center;
 }
 
-.fullImage {
-    position: relative;
-    margin-left: auto;
-    margin-right: auto;
-    width: 100%;
-    height: 600px;
-    
-}
-
-#walkmore {
-    background: url("img/work/work022.jpg");
-    background-repeat:no-repeat;
-    background-size:cover;
-    background-position:center;
-}
-
-#mtypes {
-    background: url("img/work/work022.jpg");
-    background-repeat:no-repeat;
-    background-size:cover;
-    background-position:center;
-}
-
-
 .fullText {
     background: rgb(250,250,250);
     overflow: hidden;
@@ -284,4 +260,15 @@ a:visited {
     background:#fdf0b4;
     padding: 4px 5px 4px 5px;
     margin: 0px 2px 0px 2px;
+}
+
+.contact {
+   background: rgb(250,250,250);
+    overflow: hidden;
+    padding-top: 300px;
+    position: relative;
+    height: auto;
+    width: 100%;
+    padding-bottom: 120px;
+    cursor: default;
 }
