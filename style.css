@@ -47,9 +47,8 @@ body {
 */
 
 .nextArrow {
-    background: #ededed url("img/next.svg") 50% no-repeat; 
-    height: 80px;
-    font-size: 24px;
+    background: #ededed url("img/next.svg") 52% no-repeat; 
+    height: 60px;
     margin-top: 35px;
     width: 100%;
     position: absolute;
@@ -58,7 +57,7 @@ body {
 }
 
 .nextArrow:hover {
-	background:rgb(13,194,116) url("img/next_white.svg") 50% no-repeat;
+	background:rgb(13,194,116) url("img/next_white.svg") 53% no-repeat;
     -webkit-transition:all 0.2s ease-in-out;
 	-moz-transition:all 0.2s ease-in-out;
 	-transition:all 0.2s ease-in-out;
@@ -219,13 +218,38 @@ a:visited {
     text-align: center;
 }
 
+.fullImage {
+    position: relative;
+    margin-left: auto;
+    margin-right: auto;
+    width: 100%;
+    height: 600px;
+    
+}
+
+#walkmore {
+    background: url("img/work/work022.jpg");
+    background-repeat:no-repeat;
+    background-size:cover;
+    background-position:center;
+}
+
+#mtypes {
+    background: url("img/work/work022.jpg");
+    background-repeat:no-repeat;
+    background-size:cover;
+    background-position:center;
+}
+
+
 .fullText {
     background: rgb(250,250,250);
+    overflow: hidden;
     padding-top: 30px;
-    padding-left: 40px;
-    position: absolute;
-    top: 82%;
+    position: relative;
     height: auto;
+    top: 82%;
+    width: 100%;
     padding-bottom: 120px;
     cursor: default;
 }
@@ -244,14 +268,14 @@ a:visited {
 }
 
 .fullText p {
-    margin-top: 20px;
+    position: relative; 
+    left: 10%; 
+    width: 80%;
+    margin-top: 30px;
     color: black;
     font-size: 14px;
     line-height: 180%;
-    width: 70%;
     text-align: left;
-    margin-left: auto;
-    margin-right: auto;
     margin-bottom: 25px;
 }
 
