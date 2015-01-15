@@ -1,6 +1,6 @@
 //ANCESTOR
 var ascensor = $('#Work').ascensor({
-    time: 250,
+    time: 300,
     easing: 'easeInOutCubic',
     ascensorFloorName: ["Intro", "lighthouse", "prototyper", "Work 3", "Work 4", "Work 5", "Contact"],
     direction: 'x',
@@ -35,19 +35,3 @@ var ascensorInstance = $('#Work').data('ascensor');
 			$(".direction").click(function() {
 				ascensorInstance.scrollToDirection($(this).data("direction"));
 			});
-
-//jQuery
-$(".next").click(function() { 
-    $(".fullText").fadeOut({
-        duration: 5,
-        easing: 'easeInOutCubic',  
-    });
-    $(".fullText").fadeIn({
-        duration: 150,
-        easing: 'easeInOutCubic',  
-    });
-});
-
-$(".introText").click(function() { 
-    $('body').scrollTop( 300 );
-});
