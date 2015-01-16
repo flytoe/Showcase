@@ -48,51 +48,6 @@ function ScrollUp() {
 	
 }
 
-function OpenAbout() {
-
-	//if project is open, just open that stuff as well
-	if (projectOpen) 
-	{
-		$("#about").addClass("abouton");
-		$(".closeabout").addClass("active");
-		//hide navigation
-		$("#navigation").toggleClass("hide");
-		aboutOpen = true;
-		
-		$("#darken").addClass("reveal");
-		
-	}
-	
-	//if project is closed, include cover-title to the transition
-	else if (!projectOpen)
-	{
-		currentwork.addClass("abouton");
-		$("#about").addClass("abouton");
-		$(".closeabout").addClass("active");
-		$("#navigation").toggleClass("hide");
-		aboutOpen = true;
-					
-		$("#darken").addClass("reveal");
-	}
-	
-}
-
-function CloseAbout() {
-	currentwork.removeClass("abouton");
-	
-	setTimeout($.proxy(function()
-	    {
-	        $("#about").find(".about-wrapper").toggleClass("visual");
-	    }, this), 400);
-	
-	$("#about").removeClass("abouton");
-	$(".closeabout").removeClass("active");
-	$("#navigation").toggleClass("hide");
-	aboutOpen = false;
-	
-	$("#darken").removeClass("reveal");
-}
-
 
 <!-- VIDEOS -->
 
@@ -245,109 +200,9 @@ function ResumeVideo() {
 	});
 
 
-<!-- ABOUT SCRIPT -->
-
-
-	//OPEN
-	$(".about").on({
-		click: function()
-		{
-			if (!aboutOpen)
-			{
-		
-				//get active floor and current work	
-				activefloor = ascensor.data("current-floor");
-				currentwork = $(".work:eq("+activefloor+")");
-				$("nav").find(".works").toggleClass("active");
-				$("nav").find(".about").toggleClass("active");
-				OpenAbout();
-				
-				//get video stat and pause if being played
-				if (!isPaused) 
-				{
-					PauseVideo();
-								//console.log(currentVid);
-					
-					wasPaused = false;
-					//console.log("about open, so video paused");
-				}
-				else if (isPaused) 
-				{
-					wasPaused = true;
-								//console.log(currentVid);
-					
-					//console.log("video already paused");
-				}
-				
-			}
-			else if (aboutOpen)
-			{
-				//do nuthin
-			}	
-
-		}
-		
-	});
-	
-	
-	
-	//CLOSE
-	$(".closeabout").on({
-		click: function()
-		{
-			if (aboutOpen)
-			{			
-				CloseAbout();
-				$("nav").find(".works").toggleClass("active");
-				$("nav").find(".about").toggleClass("active");
-				aboutOpen = false;
-				
-				//check if video was playing before and resume if yes
-				if (!wasPaused) 
-				{
-					ResumeVideo();
-				}
-			} 
-		}
-	});
-	
-	
-	$(".works").on({
-		click: function()
-		{
-			if (aboutOpen)
-			{			
-				CloseAbout();
-				$("nav").find(".works").toggleClass("active");
-				$("nav").find(".about").toggleClass("active");
-				aboutOpen = false;
-				
-				//check if video was playing before and resume if yes
-				if (!wasPaused) 
-				{
-					ResumeVideo();
-				}
-			} 
-		}
-	});
 	
 
-	
-<!-- ScrollTop -->
 
-//	$(".work").scroll(function(event) {
-//		currentscroll = $(".work:eq("+activefloor+")").scrollTop();
-//		
-//		if (currentscroll > 800) {
-//			$(".totop").addClass("active");
-//		}	
-//		else if(currentscroll < 800) {
-//			$(".totop").removeClass("active");
-//		}
-//	});
-
-
-	
 	
 <!--///////////////////////////////////////////////////////////////////////////////////-->	
 

@@ -2,7 +2,7 @@
 var ascensor = $('#Work').ascensor({
     time: 300,
     easing: 'easeInOutCubic',
-    ascensorFloorName: ["About", "App Design", "3Design", "4Design", "5Design", "6Design", "7Design", "Contact"],
+    ascensorFloorName: ["About", "ApplicationAndWebDesign", "3Design", "4Design", "5Design", "6Design", "7Design", "Contact"],
     direction: 'x',
     swipeNavigation: true,
     keyNavigation: true,
@@ -29,9 +29,4 @@ var ascensorInstance = $('#Work').data('ascensor');
 			
             $(".next").on('click', function() {
 				ascensorInstance.next();
-			});
-				
-
-			$(".direction").click(function() {
-				ascensorInstance.scrollToDirection($(this).data("direction"));
 			});
