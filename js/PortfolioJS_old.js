@@ -2,7 +2,7 @@
 var ascensor = $('#Work').ascensor({
     time: 300,
     easing: 'easeInOutCubic',
-    ascensorFloorName: ["Intro", "lighthouse", "prototyper", "Work 3", "Work 4", "Work 5", "Contact"],
+    ascensorFloorName: ["About", "App Design", "3Design", "4Design", "5Design", "6Design", "7Design", "Contact"],
     direction: 'x',
     swipeNavigation: true,
     keyNavigation: true,

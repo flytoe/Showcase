@@ -96,10 +96,7 @@ body {
 }
 
 .work-3 {
-    background-image:url('img/work/work03.jpg');
-    background-repeat:no-repeat;
-    background-size:cover;
-    background-position:center;
+    background:#f2d05d;
 }
 
 .work-4 {
@@ -109,8 +106,15 @@ body {
     background-position:center;
 }
 
+.work-6 {
+    background: #da4d4d;
+}
+
 .work-5 {
-    background: url("img/work/work01.jpg") 0px 0px no-repeat !important;
+    background: url("img/work/guitar2.gif");
+    background-repeat:no-repeat;
+    background-size:cover;
+    background-position:center;
 }
 
 .selected a {
@@ -178,12 +182,14 @@ body {
 /*All toher stuff*/
 
 .readMore {
-    background: rgba(250,250,250,0.95);
+    background: rgba(250,250,250,0.97);
     padding: 20px;
     padding-top: 25px;
     position: absolute;
-    top: 50%;
-    left: 52%;
+    bottom: 90px;
+    width: 80px;
+    height: 60px;
+    left: 50.5%;
     -moz-transform: translateX(-50%) translateY(-50%);
     -webkit-transform: translateX(-50%) translateY(-50%);
     transform: translateX(-50%) translateY(-50%);
@@ -257,9 +263,26 @@ a:visited {
 
 .fullText p highlight {
     color: black;
-    background:#fdf0b4;
-    padding: 4px 5px 4px 5px;
+    background:rgb(250,250,25);
+    padding: 1px 5px 1px 5px;
+    margin: 0px 2px 0px 2px; 
+}
+
+.fullText a highlight {
+    color: white;
+    background:#0DC274;
+    padding: 6px 10px 6px 10px;
     margin: 0px 2px 0px 2px;
+    line-height: 260%;
+}
+
+.fullText a highlight:hover {
+    color: white;
+    background:#0BA160;
+    -webkit-transition:all 0.1s ease-in-out;
+	-moz-transition:all 0.1s ease-in-out;
+	-transition:all 0.1s ease-in-out;
+    cursor: pointer
 }
 
 .contact {
