@@ -100,15 +100,22 @@ body {
     background-position:center;
 }
 
-.work-6 {
-    background: #da4d4d;
-}
-
 .work-5 {
-    background: url("img/work/guitar2.gif");
+    background: url("img/work/work02.jpg");
     background-repeat:no-repeat;
     background-size:cover;
     background-position:center;
+}
+
+.work-6 {
+    background: url("img/work/work06.jpg");
+    background-repeat:no-repeat;
+    background-size:cover;
+    background-position:center;
+}
+
+.work-7 {
+    background:#f2d245;
 }
 
 .selected a {
@@ -131,6 +138,12 @@ body {
     margin: 20px;
     position: relative;
     z-index: 1000;
+        -webkit-touch-callout: none;
+    -webkit-user-select: none;
+    -khtml-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
 }
 
 .global-header nav ul {
@@ -160,7 +173,7 @@ body {
     height: 60px;
     vertical-align: top;
     position: relative !important;
-    padding-left: 1px;
+    padding-left: 0px;
     background: url("img/icon_divider.gif") 0 18px no-repeat;
 }
 
@@ -266,12 +279,30 @@ a:visited {
 }
 
 .contact {
-   background: rgb(250,250,250);
-    overflow: hidden;
+    background: #f2d245;
     padding-top: 300px;
     position: relative;
     height: auto;
     width: 100%;
     padding-bottom: 120px;
     cursor: default;
+}
+
+video#bgVideo {
+    position: absolute; // Play the video in full screen mode
+    top: 0px; 
+    left: 0px; 
+    min-width: 100%; 
+    min-height: 100%;
+    z-index: -1; // Put the video behind all other elements
+    overflow: hidden;
+}
+
+.contactText {
+    margin-top: 30px;
+    color: black;
+    font-size: 14px;
+    line-height: 180%;
+    text-align: left;
+    margin-bottom: 25px;
 }
