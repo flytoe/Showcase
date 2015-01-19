@@ -2,12 +2,13 @@
 var ascensor = $('#Work').ascensor({
     time: 300,
     easing: 'easeInOutCubic',
-    ascensorFloorName: ["About", "ApplicationAndWebDesign", "3Design", "4Design", "5Design", "6Design", "7Design", "Contact"],
+    ascensorFloorName: ["About", "UI-Design", "InstallationsAndExhibitions", "GraphicAndMotion", "AppAndServiceDesign", "ConceptAndPrototyping", "Contact"],
     direction: 'x',
     swipeNavigation: true,
     keyNavigation: true,
     jump: true,
-    loop: true
+    loop: true,
+    childType:'article'
 
 });
 	
