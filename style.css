@@ -26,6 +26,24 @@ body {
     -webkit-overflow-scrolling: touch;
 }
 
+.nextContact {
+    background: #ededed url("img/mail.svg") 50% no-repeat; 
+    height: 60px;
+    margin-top: 35px;
+    width: 100%;
+    position: absolute;
+    left: 0%;
+    bottom: 0px;
+}
+
+.nextContact:hover {
+	background:rgb(13,194,116) url("img/mail_white.svg") 50% no-repeat;
+    -webkit-transition:all 0.2s ease-in-out;
+	-moz-transition:all 0.2s ease-in-out;
+	-transition:all 0.2s ease-in-out;
+    cursor: pointer
+}
+
 .nextArrow {
     background: #ededed url("img/next.svg") 50% no-repeat; 
     height: 60px;
@@ -70,7 +88,7 @@ body {
 }
 
 .work-3 {
-    background:#f2d05d;
+    background:black;
 }
 
 .work-4 {
@@ -172,7 +190,7 @@ body {
 /*All toher stuff*/
 
 .readMore {
-    background: url("img/readMore.svg") 50% 50% no-repeat, rgba(240,240,240,0.7);
+    background: url("img/readMore.svg") 50% 50% no-repeat, #d03333;
     height: 80px;
     cursor: pointer;
     margin-top: -120px;
@@ -208,17 +226,22 @@ a:visited {
     height: auto;
     top: 82%;
     width: 100%;
-    padding-bottom: 120px;
+    padding-bottom: 80px;
     cursor: default;
 }
 
 .fullText h1 {
+    margin-left: 10px;
+    margin-right: 10px;
     color: black;
     font-size: 36px;
     text-align: center;
 }
 
 .fullText h2 {
+    
+    margin-left: 10px;
+    margin-right: 10px;
     color: black;
     font-size: 24px;
     text-align: center;
@@ -226,7 +249,9 @@ a:visited {
 }
 
 .fullText p {
-    position: relative; 
+    position: relative;
+    margin-left: 10px;
+    margin-right: 10px;
     left: 10%; 
     width: 80%;
     margin-top: 30px;
@@ -275,10 +300,12 @@ video#bgVideo {
     position: absolute; // Play the video in full screen mode
     top: 0px; 
     left: 0px; 
-    min-width: 100%; 
-    min-height: 100%;
+    width: 100%; 
+    height: 100%;
     z-index: -1; // Put the video behind all other elements
     overflow: hidden;
+    background-size:cover;
+    background: url("img/work/buttonlab.mp4");
 }
 
 
