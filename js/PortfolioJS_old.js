@@ -13,9 +13,28 @@ var ascensor = $('#Work').ascensor({
 });
 	
 
+$( document ).ready(function() {
+   if (window.matchMedia('(max-width: 680px)').matches) {
+       $( "#menu-0 a" ).text( "Patric Sterrantino Interactiondesigner" );
+       $( "#menu-1 a" ).text( " – User Interface Design" );
+       $( "#menu-2 a" ).text( " – Interactive Installations and Exhibitions" );
+       $( "#menu-3 a" ).text( " – Graphic and Motion Design" );
+       $( "#menu-4 a" ).text( " – Mobile App and Service Design" );
+       $( "#menu-5 a" ).text( " – Concept and Prototyping" );
+       $( "#menu-6 a" ).text( "Contact" );
+    } else {
+    }
+});
+
 var ascensorInstance = $('#Work').data('ascensor');		
 			$(".links-to-floor li").click(function(event, index) {
 				ascensorInstance.scrollToFloor($(this).index());
+                
+                if (window.matchMedia('(max-width: 680px)').matches) {
+                   toggleMenu();
+                } else {
+                    
+                }
 			});
 
 			$(".links-to-floor li:eq("+ ascensor.data("current-floor") +")").addClass("selected");
@@ -31,3 +50,17 @@ var ascensorInstance = $('#Work').data('ascensor');
             $(".next").on('click', function() {
 				ascensorInstance.next();
 			});
+
+
+$(".show-menu").on('click', function() {
+    toggleMenu();
+});
+
+var toggleMenu = function() {
+    $("nav").slideToggle({
+        easing: 'easeInOutCubic',
+        duration: 250
+    });
+    $(".show-menu").toggleClass("openIt");
+    $( ".global-header" ).toggleClass("fullscreen", 500);
+};
