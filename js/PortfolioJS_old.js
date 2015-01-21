@@ -8,20 +8,20 @@ var ascensor = $('#Work').ascensor({
     keyNavigation: true,
     jump: true,
     loop: true,
-    childType:'article'
+    childType: 'article'
 
 });
 	
 
-$( document ).ready(function() {
+$(document).ready(function () {
    if (window.matchMedia('(max-width: 680px)').matches) {
-       $( "#menu-0 a" ).text( "Patric Sterrantino Interactiondesigner" );
-       $( "#menu-1 a" ).text( " – User Interface Design" );
-       $( "#menu-2 a" ).text( " – Interactive Installations and Exhibitions" );
-       $( "#menu-3 a" ).text( " – Graphic and Motion Design" );
-       $( "#menu-4 a" ).text( " – Mobile App and Service Design" );
-       $( "#menu-5 a" ).text( " – Concept and Prototyping" );
-       $( "#menu-6 a" ).text( "Contact" );
+       $("#menu-0 a").text("Patric Sterrantino");
+       $("#menu-1 a").text("– User Interface Design");
+       $("#menu-2 a").text("– Installations and Exhibitions");
+       $("#menu-3 a").text("– Graphic and Motion Design");
+       $("#menu-4 a").text("– Mobile App and Service Design");
+       $("#menu-5 a").text("– Concept and Prototyping");
+       $("#menu-6 a").text("Contact");
     } else {
     }
 });
