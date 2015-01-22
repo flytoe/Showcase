@@ -2,7 +2,7 @@
 var ascensor = $('#Work').ascensor({
     time: 300,
     easing: 'easeInOutCubic',
-    ascensorFloorName: ["About", "UI-Design", "InstallationsAndExhibitions", "GraphicAndMotion", "AppAndServiceDesign", "ConceptAndPrototyping", "Contact"],
+    ascensorFloorName: ["About", "ConceptionAndPrototyping", "UI-Design", "GraphicAndMotion", "MobileAppsAndServiceDesign", "InstallationsAndExhibitions", "Contact"],
     direction: 'x',
     swipeNavigation: true,
     keyNavigation: true,
@@ -16,11 +16,11 @@ var ascensor = $('#Work').ascensor({
 $(document).ready(function () {
    if (window.matchMedia('(max-width: 680px)').matches) {
        $("#menu-0 a").text("Patric Sterrantino");
-       $("#menu-1 a").text("– User Interface Design");
-       $("#menu-2 a").text("– Installations and Exhibitions");
+       $("#menu-1 a").text("– Conception and Prototyping");
+       $("#menu-2 a").text("– User Interface Design");
        $("#menu-3 a").text("– Graphic and Motion Design");
        $("#menu-4 a").text("– Mobile App and Service Design");
-       $("#menu-5 a").text("– Concept and Prototyping");
+       $("#menu-5 a").text("– Installations and Exhibitions");
        $("#menu-6 a").text("Contact");
     } else {
     }
