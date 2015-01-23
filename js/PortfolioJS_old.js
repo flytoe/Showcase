@@ -1,4 +1,3 @@
-//ANCESTOR
 var ascensor = $('#Work').ascensor({
     time: 300,
     easing: 'easeInOutCubic',
@@ -9,18 +8,17 @@ var ascensor = $('#Work').ascensor({
     jump: true,
     loop: true,
     childType: 'article'
-
 });
 	
 
 $(document).ready(function () {
    if (window.matchMedia('(max-width: 680px)').matches) {
-       $("#menu-0 a").text("Patric Sterrantino");
-       $("#menu-1 a").text("– Conception and Prototyping");
-       $("#menu-2 a").text("– User Interface Design");
-       $("#menu-3 a").text("– Graphic and Motion Design");
-       $("#menu-4 a").text("– Mobile App and Service Design");
-       $("#menu-5 a").text("– Installations and Exhibitions");
+       $("#menu-0 a").text("About Patric Sterrantino");
+       $("#menu-1 a").text("Conception and Prototyping");
+       $("#menu-2 a").text("User Interface Design");
+       $("#menu-3 a").text("Graphic and Motion Design");
+       $("#menu-4 a").text("Mobile App and Service Design");
+       $("#menu-5 a").text("Installations and Exhibitions");
        $("#menu-6 a").text("Contact");
     } else {
     }
@@ -63,4 +61,12 @@ var toggleMenu = function() {
     });
     $(".show-menu").toggleClass("openIt");
     $( ".global-header" ).toggleClass("fullscreen", 500);
+    $(".floor").fadeToggle({
+        easing: 'easeInOutCubic',
+        duration: 250
+    });
+    $(".next").fadeToggle({
+        easing: 'easeInOutCubic',
+        duration: 250
+    });
 };
