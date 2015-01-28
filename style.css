@@ -23,26 +23,7 @@ body {
     background-color: white;
     font-family: 'Armata', sans-serif;
     -webkit-overflow-scrolling: touch;
-
 }
-
-/*.nextContact {
-    background: #ededed url("img/mail.svg") 50% no-repeat; 
-    height: 60px;
-    margin-top: 35px;
-    width: 100%;
-    position: absolute;
-    left: 0%;
-    bottom: 0px;
-}
-
-.nextContact:hover {
-	background:rgb(13,194,116) url("img/mail_white.svg") 50% no-repeat;
-    -webkit-transition:all 0.2s ease-in-out;
-	-moz-transition:all 0.2s ease-in-out;
-	-transition:all 0.2s ease-in-out;
-    cursor: pointer
-}*/
 
 .nextArrow {
     background: rgba(240,240,240,0.9) url("img/next.svg") 50% no-repeat; 
@@ -70,8 +51,26 @@ body {
     cursor: default;
 }
 
+.moreProject{
+    color: black;
+    font-size: 11px;
+    background: rgba(255,255,255,0.3);
+    border-radius: 2px;
+    margin-left: 20px;
+    padding: 5px 10px 5px 10px;
+    position: absolute;
+    top: 80px;
+}
+
+.moreProject:hover{
+    color: white;
+    background: rgb(13,194,116);
+    cursor: pointer;   
+}
+
+
 .intro {
-    background: url("img/work/slide1.jpg") center center/cover no-repeat #65DCA4;
+    background: url("img/work/intro.jpg") center center/cover no-repeat #65DCA4;
 }
 
 .work-1 {
@@ -99,7 +98,7 @@ body {
 }
 
 .work-7 {
-    background: url('img/work/intro.jpg') center center/cover no-repeat #dd6b5f;
+    background: url('img/work/work07.jpg') center center/cover no-repeat #dd6b5f;
 }
 
 .selected a {
@@ -132,7 +131,7 @@ body {
 /*Mobile Navigation*/
 @media screen and (max-width : 680px){
 
-    .text, .readMore, desktop {
+    .text, desktop {
     display: none !important; 
     }
      
@@ -277,28 +276,6 @@ body {
     line-height: 61px;
     cursor: pointer;
     }
-
-    
-.readMore {
-    background: url("img/readMore_white.svg") 50% 50% no-repeat, #102E3F;
-    height: 80px;
-    cursor: pointer;
-    margin-top: -120px;
-    width: 80px;
-    left: 45%;
-    position: absolute;
-    display: none;
-}
-
-.readMore:hover {
-    background: url("img/readMore_white.svg") 50% 50% no-repeat, rgb(13,194,116);
-    cursor: pointer;
-    -webkit-transition:all 0.2s ease-in-out;
-	-moz-transition:all 0.2s ease-in-out;
-	-transition:all 0.2s ease-in-out;
-    cursor: pointer
-
-}
 
 a:link {
     text-decoration: none;
