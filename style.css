@@ -23,6 +23,7 @@ body {
     background-color: white;
     font-family: 'Armata', sans-serif;
     -webkit-overflow-scrolling: touch;
+
 }
 
 /*.nextContact {
@@ -354,8 +355,22 @@ a:visited {
 .fullText p highlight {
     color: black;
     background: yellow;
-    padding: 1px 5px 1px 5px;
-    margin: 0px 2px 0px 2px; 
+    padding: 2px 5px 2px 5px;
+    margin: 0px 2px 0px 2px;
+    -webkit-transition:all 0.1s ease-in-out;
+	-moz-transition:all 0.1s ease-in-out;
+	-transition:all 0.1s ease-in-out;
+}
+
+.fullText p highlight:hover {
+    color: black;
+    background: none;
+    padding: 2px 5px 2px 5px;
+    margin: 0px 2px 0px 2px;
+    -webkit-transition:all 0.1s ease-in-out;
+	-moz-transition:all 0.1s ease-in-out;
+	-transition:all 0.1s ease-in-out;
+
 }
 
 .fullText a highlight {
