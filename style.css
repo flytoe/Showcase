@@ -22,7 +22,7 @@ time, mark, audio, video {
 body {
     background-color: white;
     font-family: 'Armata', sans-serif;
-    -webkit-overflow-scrolling: touch;
+    /*-webkit-overflow-scrolling: touch;*/
 }
 
 .nextArrow {
@@ -77,7 +77,7 @@ body {
 }
 
 .work-2 {
-    background: url('img/work/work02.jpg') center center/cover no-repeat #FFF046;
+    background: rgb(240,240,240);
 }
 
 .work-3 {
@@ -97,7 +97,7 @@ body {
 }
 
 .work-7 {
-    background: url('img/work/work07.jpg') center center/cover no-repeat #FFF046;
+    background: rgb(240,240,240);
 }
 
 .selected a {
@@ -128,7 +128,7 @@ body {
 }
 
 /*Mobile Navigation*/
-@media screen and (max-width : 680px){
+@media screen and (max-width : 670px){
 
     .text, desktop {
         display: none !important; 
@@ -136,7 +136,6 @@ body {
 
     .show-menu, mobile {
         display:block;
-
     }
 
     nav {
@@ -151,7 +150,7 @@ body {
         left: 0px;
         width: 60px;
         margin: 0px!important;
-        position: absolute;
+        position: relative;
         z-index: 1000;
         -webkit-touch-callout: none;
         -webkit-user-select: none;
@@ -163,7 +162,6 @@ body {
         -moz-transition: all .2s ease-in-out; // Mozilla
         -o-transition: all .2s ease-in-out; // Opera
         transition: all .2s ease-in-out;
-
     }
 
     .fullscreen {
@@ -200,7 +198,6 @@ body {
 
     }
 
-
     .headlineMobile {
         z-index: 1000;
         margin-right: auto;
@@ -208,17 +205,16 @@ body {
         background: white;
         height: 60px;
         position: relative;
+        width: 100%;
         display: block !important;
-
     }
-
 }
-
 
 .headlineMobile, mobile {
     display: none;
-}/*Desktop Navigation*/
+}
 
+/*Desktop Navigation*/
 .desktop {
     display: block;
 }
@@ -285,12 +281,24 @@ a:visited {
 }
 
 .fullText {
-    background: rgb(250,250,250);
+    background: rgb(240,240,240);
     overflow: visible;
     padding-top: 20px;
     position:absolute;
     height: auto;
     top: 78%;
+    width: 100%;
+    padding-bottom: 60px;
+    cursor: default;
+}
+
+#topContainer {
+    background: rgb(240,240,240);
+    overflow: visible;
+    padding-top: 20px;
+    position:absolute;
+    height: auto;
+    top: 80px;
     width: 100%;
     padding-bottom: 60px;
     cursor: default;
@@ -304,28 +312,20 @@ a:visited {
     text-align: center;
 }
 
-.fullText h2 {
-
-    margin-left: 10px;
-    margin-right: 10px;
-    color: black;
-    font-size: 24px;
-    text-align: center;
-    margin-top: 20px;
-}
-
 .fullText p {
     position: relative;
     margin-left: auto;
     margin-right: auto;
     max-width: 580px;
-    margin-top: 30px;
+    margin-top: 20px;
     color: black;
     font-size: 14px;
     line-height: 180%;
     text-align: left;
     margin-bottom: 25px;
-}
+    padding-left: 20px;
+    padding-right: 20px;
+    }
 
 .fullText p highlight {
     color: black;
@@ -392,4 +392,57 @@ a:visited {
     line-height: 180%;
     text-align: left;
     margin-bottom: 25px;
+}
+
+#WorkContainer{
+    position: relative;
+    margin-left: auto;
+    margin-right: auto;
+    max-width: 960px;
+}
+
+.WorkItem { 
+    width: 93%;
+    background-color: white;
+
+    margin: 10px;
+    
+}
+
+.WorkItem:hover {
+    background-color: lightgrey;
+    -webkit-transition:all 0.2s ease-in-out;
+    -moz-transition:all 0.2s ease-in-out;
+    -transition:all 0.2s ease-in-out;
+    cursor: pointer
+}
+
+.WorkItem.w2 { width: 45%; }
+
+.WorkItem img {
+    display: block;
+    max-width: 100%;
+}
+
+.WorkItem h2 {
+    margin-left: 20px;
+    margin-right: 20px;
+    color: black;
+    font-size: 20px;
+    text-align: left;
+    margin-top: 20px;
+}
+
+.WorkItem p {
+    position: relative;
+    margin-left: auto;
+    margin-right: auto;
+    max-width: 960px;
+    margin-top: 20px;
+    color: black;
+    font-size: 13px;
+    line-height: 180%;
+    text-align: left;
+    padding-left: 20px;
+    padding-right: 20px;
 }

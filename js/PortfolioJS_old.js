@@ -1,7 +1,7 @@
 var ascensor = $('#Work').ascensor({
     time: 300,
     easing: 'easeInOutCubic',
-    ascensorFloorName: ["About", "ConceptionAndPrototyping", "UI-Design", "GraphicAndMotion", "MobileAppsAndServiceDesign", "InstallationsAndExhibitions", "Contact"],
+    ascensorFloorName: ["About", "Conception", "UI-Design", "App-Design", "Work", "Contact"],
     direction: 'x',
     swipeNavigation: true,
     keyNavigation: true,
@@ -12,14 +12,24 @@ var ascensor = $('#Work').ascensor({
 
 
 $(document).ready(function () {
-    if (window.matchMedia('(max-width: 680px)').matches) {
+    if (window.matchMedia('(max-width: 1048px)').matches) {
+        $("#menu-0 a").text("About Patric Sterrantino");
+        $("#menu-1 a").text("1");
+        $("#menu-2 a").text("2");
+        $("#menu-3 a").text("3");
+        $("#menu-4 a").text("Work");
+        $("#menu-5 a").text("Contact");
+    }
+});
+
+$(document).ready(function () {
+    if (window.matchMedia('(max-width: 670px)').matches) {
         $("#menu-0 a").text("About Patric Sterrantino");
         $("#menu-1 a").text("Conception and Prototyping");
-        $("#menu-2 a").text("User Interface Design");
-        $("#menu-3 a").text("Graphic and Motion Design");
-        $("#menu-4 a").text("Mobile App and Service Design");
-        $("#menu-5 a").text("Installations and Exhibitions");
-        $("#menu-6 a").text("Contact");
+        $("#menu-2 a").text("UI/UX and Graphic Design");
+        $("#menu-3 a").text("Mobile App and Service Design");
+        $("#menu-4 a").text("Work");
+        $("#menu-5 a").text("Contact");
     }
 });
 
@@ -44,7 +54,7 @@ var ascensorInstance = $('#Work').data('ascensor');
 $(".links-to-floor li").click(function (event, index) {
     ascensorInstance.scrollToFloor($(this).index());
 
-    if (window.matchMedia('(max-width: 680px)').matches) {
+    if (window.matchMedia('(max-width: 1270px)').matches) {
         toggleMenu();
     }
 });
@@ -66,4 +76,9 @@ $(".next").on('click', function () {
 
 $(".show-menu").on('click', function () {
     toggleMenu();
+});
+
+var $WorkContainer = $('#WorkContainer');
+$WorkContainer.masonry({
+    itemSelector: '.WorkItem'
 });
