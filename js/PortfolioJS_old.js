@@ -10,19 +10,7 @@ var ascensor = $('#Work').ascensor({
     childType: 'article'
 });
 
-
-$(document).ready(function () {
-    if (window.matchMedia('(max-width: 1048px)').matches) {
-        $("#menu-0 a").text("About Patric Sterrantino");
-        $("#menu-1 a").text("1");
-        $("#menu-2 a").text("2");
-        $("#menu-3 a").text("3");
-        $("#menu-4 a").text("Work");
-        $("#menu-5 a").text("Contact");
-    }
-});
-
-$(document).ready(function () {
+var MenuCallback = function () {
     if (window.matchMedia('(max-width: 670px)').matches) {
         $("#menu-0 a").text("About Patric Sterrantino");
         $("#menu-1 a").text("Conception and Prototyping");
@@ -31,13 +19,33 @@ $(document).ready(function () {
         $("#menu-4 a").text("Work");
         $("#menu-5 a").text("Contact");
     }
-});
+    if (window.matchMedia('(max-width: 1048px)').matches) {
+        $("#menu-0 a").text("Patric Sterrantino Interactiondesign");
+        $("#menu-1 a").text("1");
+        $("#menu-2 a").text("2");
+        $("#menu-3 a").text("3");
+        $("#menu-4 a").text("Work");
+        $("#menu-5 a").text("Contact");
+    }
+    if (window.matchMedia('(min-width: 1049px)').matches) {
+        $("#menu-0 a").text("Patric Sterrantino Interactiondesign");
+        $("#menu-1 a").text("Conception and Prototyping");
+        $("#menu-2 a").text("UI/UX and Graphic Design");
+        $("#menu-3 a").text("App and Service Design");
+        $("#menu-4 a").text("Work");
+        $("#menu-5 a").text("Contact");
+    }
+};
+
+$(document).ready(MenuCallback);
+$(window).resize(MenuCallback);
 
 var toggleMenu = function () {
     $("nav").slideToggle({
         easing: 'easeInOutCubic',
         duration: 250
     });
+    
     $(".show-menu").toggleClass("openIt");
     $(".global-header").toggleClass("fullscreen", 500);
     $(".floor").fadeToggle({
@@ -54,7 +62,7 @@ var ascensorInstance = $('#Work').data('ascensor');
 $(".links-to-floor li").click(function (event, index) {
     ascensorInstance.scrollToFloor($(this).index());
 
-    if (window.matchMedia('(max-width: 1270px)').matches) {
+    if (window.matchMedia('(max-width: 670px)').matches) {
         toggleMenu();
     }
 });
