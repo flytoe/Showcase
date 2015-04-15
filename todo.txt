@@ -1,2 +1,11 @@
-- Bild von Landschaft bei Contact
++ Bild von Landschaft bei Contact
+- Mobile press ist doppelt
+- Startseite fixen
++ Works
+- Texte
+- bild fährt in hintergrund beim scrollen
++ kunde auf works
+
+# works erweitern
+- kunde auf works
 

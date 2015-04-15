@@ -14,7 +14,7 @@ var MenuCallback = function () {
     if (window.matchMedia('(max-width: 670px)').matches) {
         $("#menu-0 a").text("About Patric Sterrantino");
         $("#menu-1 a").text("Conception and Prototyping");
-        $("#menu-2 a").text("UI/UX and Graphic Design");
+        $("#menu-2 a").text("UI/UX Design");
         $("#menu-3 a").text("Mobile App and Service Design");
         $("#menu-4 a").text("Work");
     }
@@ -28,7 +28,7 @@ var MenuCallback = function () {
     if (window.matchMedia('(min-width: 1049px)').matches) {
         $("#menu-0 a").text("Patric Sterrantino Interactiondesign");
         $("#menu-1 a").text("Conception and Prototyping");
-        $("#menu-2 a").text("UI/UX and Graphic Design");
+        $("#menu-2 a").text("UI/UX Design");
         $("#menu-3 a").text("App and Service Design");
         $("#menu-4 a").text("Work");
     }

@@ -397,14 +397,6 @@ a:visited {
     
 }
 
-.WorkItem:hover {
-    background-color: lightgrey;
-    -webkit-transition:all 0.2s ease-in-out;
-    -moz-transition:all 0.2s ease-in-out;
-    -transition:all 0.2s ease-in-out;
-    cursor: pointer
-}
-
 .WorkItem.w2 { width: 45%; }
 
 .WorkItem.w3 { width: 25%; background-color: white}
