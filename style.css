@@ -22,7 +22,8 @@ time, mark, audio, video {
 body {
     background-color: white;
     font-family: 'Armata', sans-serif;
-    /*-webkit-overflow-scrolling: touch;*/
+    -webkit-overflow-scrolling: touch;
+    overflow-scrolling: touch;
 }
 
 .nextArrow {
@@ -67,37 +68,24 @@ body {
     cursor: pointer;   
 }
 
-
 .intro {
     background: url("img/work/intro.jpg") center center/cover no-repeat #65DCA4;
 }
 
-.work-1 {
-    background: url('img/work/work01.jpg') center center/cover no-repeat #dd6b5f;
+.ui-design {
+    background: url('img/work/ui_design.jpg') center center/cover no-repeat #dd6b5f;
 }
 
 .work-2 {
     background: rgb(240,240,240);
 }
 
-.work-3 {
-    background:  url('img/work/work03.jpg') center center/cover no-repeat #FBDC73;
-}
-
 .work-4 {
     background:  url('img/work/work04.jpg') center center/cover no-repeat #FBDC73;
 }
 
-.work-5 {
-    background: url('img/work/work05.jpg') center center/cover no-repeat #FFF046;
-}
-
-.work-6 {
-    background: url('img/work/work06.jpg') center center/cover no-repeat #FFF046;
-}
-
-.work-7 {
-    background: rgb(240,240,240);
+.conception {
+    background: url('img/work/conception.png') center center/cover no-repeat #FFF046;
 }
 
 .selected a {
@@ -281,7 +269,7 @@ a:visited {
 }
 
 .fullText {
-    background: rgb(240,240,240);
+    background: rgb(250,250,250);
     overflow: visible;
     padding-top: 20px;
     position:absolute;
@@ -419,6 +407,8 @@ a:visited {
 
 .WorkItem.w2 { width: 45%; }
 
+.WorkItem.w3 { width: 25%; background-color: white}
+
 .WorkItem img {
     display: block;
     max-width: 100%;
@@ -431,6 +421,24 @@ a:visited {
     font-size: 20px;
     text-align: left;
     margin-top: 20px;
+}
+
+.w3 h2 {
+    margin-left: 20px;
+    margin-right: 20px;
+    color: black;
+    font-size: 14px;
+    text-align: center;
+    margin-top: 10px;
+    
+}
+
+.w3 img {
+    max-width:150px; 
+    height:auto;    
+    display: block;
+    margin-left: auto;
+    margin-right: auto 
 }
 
 .WorkItem p {

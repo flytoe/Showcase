@@ -1,7 +1,7 @@
 var ascensor = $('#Work').ascensor({
     time: 300,
     easing: 'easeInOutCubic',
-    ascensorFloorName: ["About", "Conception", "UI-Design", "App-Design", "Work", "Contact"],
+    ascensorFloorName: ["About", "Conception", "UI-Design", "App-Design", "Work"],
     direction: 'x',
     swipeNavigation: true,
     keyNavigation: true,
@@ -17,7 +17,6 @@ var MenuCallback = function () {
         $("#menu-2 a").text("UI/UX and Graphic Design");
         $("#menu-3 a").text("Mobile App and Service Design");
         $("#menu-4 a").text("Work");
-        $("#menu-5 a").text("Contact");
     }
     if (window.matchMedia('(max-width: 1048px)').matches) {
         $("#menu-0 a").text("Patric Sterrantino Interactiondesign");
@@ -25,7 +24,6 @@ var MenuCallback = function () {
         $("#menu-2 a").text("2");
         $("#menu-3 a").text("3");
         $("#menu-4 a").text("Work");
-        $("#menu-5 a").text("Contact");
     }
     if (window.matchMedia('(min-width: 1049px)').matches) {
         $("#menu-0 a").text("Patric Sterrantino Interactiondesign");
@@ -33,7 +31,6 @@ var MenuCallback = function () {
         $("#menu-2 a").text("UI/UX and Graphic Design");
         $("#menu-3 a").text("App and Service Design");
         $("#menu-4 a").text("Work");
-        $("#menu-5 a").text("Contact");
     }
 };
 
