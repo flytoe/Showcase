@@ -1,9 +1,9 @@
 + Bild von Landschaft bei Contact
 - Mobile press ist doppelt
-- Startseite fixen
++ Startseite fixen
 + Works
 - Texte
-- bild fährt in hintergrund beim scrollen
++ bild fährt in hintergrund beim scrollen
 + kunde auf works
 
 # works erweitern

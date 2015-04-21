@@ -32,7 +32,7 @@
         <script>
             !function(){window.SimpleHeatmapsLoader="shldr","shldr"in window||(window.shldr=function(){window.shldr.q.push(arguments)},window.shldr.q=[]),window.shldr.l=(new Date).getTime();var e=document.createElement("script");e.src="//d3qy04aabho0yp.cloudfront.net/assets/sh.min.js",e.async=!0;var n=document.getElementsByTagName("script")[0];n.parentNode.insertBefore(e,n)}();
         </script>
-    
+        <script src="js/jquery.tumblrFeed.min.js"></script>
     </head>
     
     <body>
@@ -47,7 +47,6 @@
                         <li class="nav-item" id="menu-1"><a></a></li>
                         <li class="nav-item" id="menu-2"><a></a></li>
                         <li class="nav-item" id="menu-3"><a></a></li>
-                        <li class="nav-item" id="menu-4"><a></a></li>
                     </ul>
                 </nav>                
             </div>
@@ -64,54 +63,17 @@
                         My profile on Xing
                     </div></a>
 
-                <div class="fullText" id="introText">
-                    <p>I am Patric Sterrantino. A freelancer for interactiondesign located in Stuttgart, Germany. I guide you through a user centered design process and help you to create meaningful user interfaces responding to the users needs.<br><br>I love solving complex problems and offer the following skills and expertise:<br><br>
-
-                        <a href="#Conception"><highlight >Conception and Prototyping</highlight></a><br>
-                        <a href="#UI-Design"><highlight >UI/UX and Graphic Design</highlight></a><br>
-                        <a href="#App-Design"><highlight >Mobile App and Service Design</highlight></a><br>
-                      
-                        <br><a href="#Work"><highlight >See some of excerpts my work</highlight></a><br><br>Honorable response:<br><highlight><img src="img/awards/awardrd.png"></img> Red Dot Award</highlight> <highlight><img src="img/awards/awardif.png"></img> iF design award</highlight><highlight><img src="img/awards/awardpf.png"></img> descom</highlight><br><!--At Intuity MediaLab I worked (2013-2015) for: BOSCH, Daimler Research, car2go black, Festo AG, Walter AG, TDM Systems, Zeiss Vision, Zeiss Meditec.--><br>If you are interested in working with me just contact me</p>
-
-
-                        <div id="WorkContainer" class="js-masonry"
-                             data-masonry-options='{ "columnWidth": 10, "itemSelector": ".WorkItem" }'>
-
-                            <div class="WorkItem w3">
-                                <img src="img/contact/phone.svg"></img>
-                            <h2>+49 162 4167 467</h2>
-                        </div>
-
-                        <div class="WorkItem w3">
-                            <img src="img/work/work06.jpg"></img>
-                        <h2>
-                            <a href="mailto:patric@threethink.io">
-                                <highlight>patric@threethink.io</highlight>
-                            </a>        
-                        </h2>
-                        </div>
-
-
-
-                    <a href="https://www.google.de/maps/place/Strohberg+38,+70180+Stuttgart/@48.76193,9.17276,17z/data=!3m1!4b1!4m2!3m1!1s0x4799db540a96c4dd:0xf99acc7b0e89114a" target="_blank"><div class="WorkItem w3">
-                        <img src="img/work/work06.jpg"></img>
-                        <h2>
-                            Strohberg 38, 70180 Stuttgart
-                        </h2>
-                        </div></a>
-                    </div>
-                    <p class="contactText">
-                        <a href="--" target="_blank"><highlight >CV</highlight></a><br>
-                        <a href="https://www.xing.com/profile/Patric_Sterrantino/" target="_blank"><highlight >Xing</highlight></a><br>
-
-                        <a href="https://www.linkedin.com/in/sterrantino" target="_blank"><highlight >LinkedIn</highlight></a><br>
-
-                        <a href="http://www.interactionblog.com" target="_blank"><highlight >My blog interactionblog.com</highlight></a><br>
-
-                        <a href="https://vimeo.com/sterrantino" target="_blank"><highlight >My Videos on Vimeo</highlight></a><br>
-                        <br>
-
-                        This website is work in progress (April 2015), so come back in a few days. Code and Design by Patric Sterrantino. <br>Made with: JQuery, ascensor.js, touche.js and masonry.js <br> <a href="./disclaimer.html" target="_blank">Disclaimer</a>
+                <div class="fullText">
+                    <div class="profile"></div>
+                    <p>I am Patric Sterrantino. A freelancer for interactiondesign located in Stuttgart, Germany. I love solving complex problems and guide you through a user centered design process starting with  <a href="#Conception"><highlight >Conception and Prototyping</highlight></a> for mobile Apps, Web-Services, Software UI's and Services to create meaningful<a href="#UI-Design"><highlight > user interfaces</highlight></a> responding to the users needs. I guide and support the development of the product until it's alive.<br>
+<br>Honorable response:<br><highlight><img src="img/awards/awardrd.png"></img> Red Dot Award</highlight> <highlight><img src="img/awards/awardif.png"></img> iF design award</highlight><highlight><img src="img/awards/awardpf.png"></img> descom</highlight><br><br>If you are interested in working with me just contact me:</p>
+            
+                <p class="contactText">
+                    <a href="call:00491624167467">+49 162 4167 467</a><br>
+                    <a href="mailto:patric@threethink.io">patric@threethink.io</a><br>
+                    <a href="https://www.google.de/maps/place/Strohberg+38,+70180+Stuttgart/@48.76193,9.17276,17z/data=!3m1!4b1!4m2!3m1!1s0x4799db540a96c4dd:0xf99acc7b0e89114a" target="_blank">Strohberg 38, 70180 Stuttgart</a><br><br>
+                    
+                    <disclaimer>This website is work in progress (April 2015). Code and Design by Patric Sterrantino. Made with: JQuery, ascensor.js, touche.js and masonry.js. <a href="./disclaimer.html" target="_blank">Show Disclaimer (german)</a></disclaimer>
                     </p>
     
                 </div>
@@ -123,7 +85,8 @@
     <div class="fullText">
 
         <h1 class="text">Conception and Prototyping</h1>
-        <p>I focus on the user's needs and requirements to aim the most comfortable way of using a product or service. A solid information architecture and conception in <highlight>flowcharts and wireframing</highlight>enable me to create early <highlight>prototypes</highlight> of the story the product is telling. I iterate the prototypes to shape the product for a successful launch. I love, exploring new ways and possibilities of interacting with stuff to improove and redefine current mindsets to create joyfull and successful user experiences with meaningful user interfaces. 
+        <p>I focus on the user's needs and requirements to aim the most comfortable way of using a product or service. A solid information architecture and conception in form of <highlight>flowcharts and wireframes</highlight> enable me to create early <highlight>prototypes</highlight> of the story the product is telling.</p>
+        <p>I iterate the prototypes to shape the product for a successful launch. I love, exploring new ways and possibilities of interacting with stuff to improove and redefine current mindsets to create joyfull and successful user experiences with meaningful user interfaces. 
         </p>
     </div>
 </article>
@@ -133,66 +96,30 @@
     <div class="fullText" id="work-1">
 
         <h1 class="text">UI/UX and Graphic Design</h1>
-        <p>I define how a hardware or software product <highlight>looks, feels and behaves</highlight>.</p>
+        <p>The visual appearance of a product is a very important factor. It will be the point of choice fail or win, I define how a hardware or software product <highlight>looks, feels and behaves</highlight>.</p>
+        <p>I focus on the user's needs and requirements to aim the most comfortable way of using a product or service. A solid information architecture and conception in <highlight>flowcharts and wireframing</highlight>enable me to create early <highlight>prototypes</highlight> of the story the product is telling. I iterate the prototypes to shape the product for a successful launch. I love, exploring new ways and possibilities of interacting with stuff to improove and redefine current mindsets to create joyfull and successful user experiences with meaningful user interfaces. 
+        </p>
 
     </div>         
 </article>
 
-<article class="floor work-4">
-    <h1 class="headlineMobile"><p>App and Service Design</p></h1>
-    <a href="http://www.intuity.de/en/programs/urbanism-and-mobility/" target="_blank"><div class="moreProject">
-        car2go black – Intuity Media Lab
-        </div></a>
-    <div class="fullText" >
-
-        <h1 class="text">App and Service Design</h1>
-        <p>Having the hottest new idea for an app is useless if people don't like looking at it. Guarantee your apps success by filling it with beautiful icons.</p>
-
-    </div>
-</article>  
-
 <article class="floor work-2">
     <h1 class="headlineMobile"><p>Work</p></h1>
     <div class="fullText" id="topContainer">
-    <div id="WorkContainer" class="js-masonry"
-                 data-masonry-options='{ "columnWidth": 10, "itemSelector": ".WorkItem" }'>
-            
-            <div class="WorkItem w2">
-                <img src="img/work/work06.jpg"></img>
-                <h2>Title</h2>
-                <p>Handcrafted Icons, Illustrations or Animations tailored to your particular needs, highlight the features of your business and engage the user to be interested in your product.</p>
-            </div>
-
-            <div class="WorkItem w2">
-                <img src="img/work/work01.jpg"></img>
-            <h2>Title</h2>
-            <p>Handcrafted Icons, Illustrations or Animations tailored to your particular needs, highlight the features of your business and engage the user to be interested in your product.</p>
-            </div>
-
-            <div class="WorkItem w2">
-                <img src="img/work/work04.jpg"></img>
-            <h2>Title</h2>
-            <p>Handcrafted Icons, Illustrations or Animations tailored to your particular needs, highlight the features of your business and engage the user to be interested in your product.</p>
-            </div>
-
-            <div class="WorkItem w2">
-                <img src="img/work/work07.jpg"></img>
-            <h2>Stay In Touch</h2>
-            <p>Handcrafted Icons, Illustrations or Animations tailored to your particular needs, highlight the features of your business and engage the user to be interested in your product.</p>
-            </div>
-
-
-            <div class="WorkItem w2">
-                <img src="img/work/work03.jpg"></img>
-            <h2>Slippy Ralph</h2>
-<p>Handcrafted Icons, Illustrations or Animations tailored to your particular needs, highlight the features of your business and engage the user to be interested in your productof your business and engage the user to be interested in your productof your business and engage the user to be interested in your product.</p>
-            </div>
-    
+        <div id="WorkContainer" class="js-masonry" data-masonry-options='{ "itemSelector": ".WorkPost" }'>
+        </div>  
     </div>
-    </div>
+
+    <script>
+        $('#WorkContainer').tumblrFeed({
+            tumblrUsername: "sterrantino",
+            apikey: "Vsz7WWciTHuF0UHE7TXmVLCLselJLU4qDLdgSRfhow8qGUb3a3",
+            postLimit: 50             
+        });
+
+    </script>
+
 </article>
-
-
 </section>
 <script src="js/PortfolioJS_old.js"></script>
 </body>
