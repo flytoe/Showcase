@@ -1,0 +1,434 @@
+/* line 1, /Users/flytoe/GitHub/portfolio/style.scss */
+html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre, a, abbr, acronym, address, big, cite, code, del, dfn, em, img, ins, kbd, q, s, samp, small, strike, strong, sub, sup, tt, var, b, u, i, center, dl, dt, dd, ol, ul, li, fieldset, form, label, legend, table, caption, tbody, tfoot, thead, tr, th, td, article, aside, canvas, details, embed, figure, figcaption, footer, hgroup, menu, nav, output, ruby, section, summary, time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font: inherit;
+  vertical-align: baseline;
+  list-style: none; }
+
+/* line 13, /Users/flytoe/GitHub/portfolio/style.scss */
+body {
+  background-color: white;
+  font: 100% 'Armata', sans-serif;
+  -webkit-overflow-scrolling: touch;
+  overflow-scrolling: touch; }
+
+/* line 20, /Users/flytoe/GitHub/portfolio/style.scss */
+.nextArrow {
+  background: rgba(240, 240, 240, 0.9) url("img/next.svg") 50% no-repeat;
+  height: 60px;
+  margin-top: 35px;
+  width: 100%;
+  position: fixed;
+  left: 0%;
+  bottom: 0px;
+  z-index: 99; }
+
+/* line 31, /Users/flytoe/GitHub/portfolio/style.scss */
+.nextArrow:hover {
+  background: #0DC274 url("img/next_white.svg") 50% no-repeat;
+  -webkit-transition: all 0.2s ease-in-out;
+  -moz-transition: all 0.2s ease-in-out;
+  -transition: all 0.2s ease-in-out;
+  cursor: pointer; }
+
+/* line 39, /Users/flytoe/GitHub/portfolio/style.scss */
+.floor {
+  color: black;
+  font-size: 40px;
+  text-align: center;
+  cursor: default; }
+
+/* line 46, /Users/flytoe/GitHub/portfolio/style.scss */
+.moreProject {
+  color: black;
+  font-size: 12px;
+  background: rgba(255, 255, 255, 0.5);
+  margin-left: -2px;
+  padding: 15px 20px 15px 20px;
+  position: absolute;
+  top: 67%; }
+
+/* line 56, /Users/flytoe/GitHub/portfolio/style.scss */
+.moreProject:hover {
+  color: white;
+  background: #0DC274;
+  cursor: pointer; }
+
+/* line 62, /Users/flytoe/GitHub/portfolio/style.scss */
+.intro {
+  background: url('img/work/conception.png') center center/cover no-repeat #dd6b5f; }
+
+/* line 66, /Users/flytoe/GitHub/portfolio/style.scss */
+.work {
+  background: #f0f0f0; }
+
+/* line 70, /Users/flytoe/GitHub/portfolio/style.scss */
+.expertise {
+  background: url('img/work/intro.jpg') center center/cover no-repeat #dd6b5f; }
+
+/* line 74, /Users/flytoe/GitHub/portfolio/style.scss */
+.selected a {
+  color: white !important;
+  background: #0DC274;
+  height: 99.9%; }
+
+/* line 80, /Users/flytoe/GitHub/portfolio/style.scss */
+.selected a:hover {
+  color: white !important;
+  background-color: #0DC274; }
+
+/*Show Navigation*/
+/* line 86, /Users/flytoe/GitHub/portfolio/style.scss */
+.show-menu {
+  color: black;
+  display: none;
+  height: 60px; }
+
+/* line 92, /Users/flytoe/GitHub/portfolio/style.scss */
+.closeIt {
+  background: url("img/menu_close.svg") 1.2% no-repeat #EDEDED; }
+
+/* line 96, /Users/flytoe/GitHub/portfolio/style.scss */
+.openIt {
+  background: url("img/menu_open.svg") 55% no-repeat #EDEDED; }
+
+/*Mobile Navigation*/
+@media screen and (max-width: 680px) {
+  /* line 103, /Users/flytoe/GitHub/portfolio/style.scss */
+  .text, desktop {
+    display: none !important; }
+  /* line 107, /Users/flytoe/GitHub/portfolio/style.scss */
+  .show-menu, mobile {
+    display: block; }
+  /* line 110, /Users/flytoe/GitHub/portfolio/style.scss */
+  nav {
+    display: none;
+    height: 100%;
+    width: 20%;
+    background: white !important; }
+  /* line 116, /Users/flytoe/GitHub/portfolio/style.scss */
+  .global-header {
+    height: 100% !important;
+    left: 0px;
+    width: 60px;
+    margin: 0px !important;
+    position: relative;
+    z-index: 1000;
+    -webkit-touch-callout: none;
+    -webkit-user-select: none;
+    -khtml-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+    -webkit-transition: all .2s ease-in-out;
+    -moz-transition: all .2s ease-in-out;
+    -o-transition: all .2s ease-in-out;
+    transition: all .2s ease-in-out; }
+  /* line 134, /Users/flytoe/GitHub/portfolio/style.scss */
+  .fullscreen {
+    width: 100% !important; }
+  /*Make dropdown links appear inline*/
+  /* line 139, /Users/flytoe/GitHub/portfolio/style.scss */
+  .global-header nav ul li {
+    width: 100%;
+    height: 100%;
+    line-height: 60px;
+    position: static;
+    text-align: left;
+    color: #ffffff !important; }
+  /* line 147, /Users/flytoe/GitHub/portfolio/style.scss */
+  .global-header nav li:hover {
+    background-color: #5e5e5e;
+    cursor: pointer; }
+  /* line 151, /Users/flytoe/GitHub/portfolio/style.scss */
+  .global-header .nav-item {
+    display: inline-block;
+    font-style: normal;
+    font-size: 12px !important; }
+  /* line 156, /Users/flytoe/GitHub/portfolio/style.scss */
+  .headlineMobile p {
+    font-size: 12px !important;
+    color: black;
+    text-align: center;
+    vertical-align: middle;
+    line-height: 64px; }
+  /* line 163, /Users/flytoe/GitHub/portfolio/style.scss */
+  .headlineMobile {
+    z-index: 1000;
+    margin-right: auto;
+    margin-left: auto;
+    background: white;
+    height: 60px;
+    position: relative;
+    width: 100%;
+    display: block !important; }
+  /* line 173, /Users/flytoe/GitHub/portfolio/style.scss */
+  .WorkPost {
+    width: 95% !important; } }
+
+/* line 179, /Users/flytoe/GitHub/portfolio/style.scss */
+.headlineMobile, mobile {
+  display: none; }
+
+/*Desktop Navigation*/
+/* line 184, /Users/flytoe/GitHub/portfolio/style.scss */
+.desktop {
+  display: block; }
+
+/* line 188, /Users/flytoe/GitHub/portfolio/style.scss */
+.global-header {
+  height: auto;
+  background: #fafafa;
+  margin: 0px;
+  position: relative;
+  z-index: 999;
+  -webkit-touch-callout: none;
+  -webkit-user-select: none;
+  -khtml-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none; }
+
+/* line 202, /Users/flytoe/GitHub/portfolio/style.scss */
+.global-header nav ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: inline-block;
+  width: 100%;
+  font-size: 14;
+  line-height: 60px; }
+
+/* line 212, /Users/flytoe/GitHub/portfolio/style.scss */
+.global-header nav li:hover {
+  background-color: #EEEEEE; }
+
+/* line 216, /Users/flytoe/GitHub/portfolio/style.scss */
+.global-header nav {
+  width: 100%;
+  text-align: left; }
+
+/* line 221, /Users/flytoe/GitHub/portfolio/style.scss */
+.global-header .nav-item {
+  display: inline-block;
+  font-style: normal;
+  font-size: 12px;
+  height: 60px;
+  vertical-align: top;
+  position: relative !important;
+  padding-left: 0px; }
+
+/* line 231, /Users/flytoe/GitHub/portfolio/style.scss */
+.global-header .nav-item a {
+  display: block;
+  color: #333;
+  line-height: 60px;
+  padding: 0 20px;
+  line-height: 61px;
+  cursor: pointer; }
+
+/* line 240, /Users/flytoe/GitHub/portfolio/style.scss */
+a:link {
+  text-decoration: none; }
+
+/* line 244, /Users/flytoe/GitHub/portfolio/style.scss */
+a:visited {
+  text-decoration: none; }
+
+/* line 248, /Users/flytoe/GitHub/portfolio/style.scss */
+.fullText {
+  background: white;
+  overflow: visible;
+  padding-top: 20px;
+  position: absolute;
+  height: auto;
+  top: 62%;
+  width: 100%;
+  padding-bottom: 60px;
+  cursor: default; }
+
+/* line 260, /Users/flytoe/GitHub/portfolio/style.scss */
+.topContainer {
+  background: #f0f0f0;
+  overflow: visible;
+  padding-top: 20px;
+  position: absolute;
+  height: auto;
+  top: 80px;
+  width: 100%;
+  padding-bottom: 60px;
+  cursor: default; }
+
+/* line 272, /Users/flytoe/GitHub/portfolio/style.scss */
+.fullText h1 {
+  margin-left: 10px;
+  margin-right: 10px;
+  color: black;
+  font-size: 32px;
+  text-align: center; }
+
+/* line 280, /Users/flytoe/GitHub/portfolio/style.scss */
+.fullText p {
+  position: relative;
+  margin-left: auto;
+  margin-right: auto;
+  max-width: 580px;
+  margin-top: 20px;
+  color: black;
+  font-size: 14px;
+  line-height: 180%;
+  text-align: left;
+  margin-bottom: 25px;
+  padding-left: 20px;
+  padding-right: 20px; }
+
+/* line 295, /Users/flytoe/GitHub/portfolio/style.scss */
+.fullText p highlight {
+  color: black;
+  background: #FFF046;
+  padding: 2px 5px 2px 5px;
+  margin: 0px 2px 0px 2px;
+  -webkit-transition: all 0.1s ease-in-out;
+  -moz-transition: all 0.1s ease-in-out;
+  -transition: all 0.1s ease-in-out; }
+
+/* line 305, /Users/flytoe/GitHub/portfolio/style.scss */
+.fullText p highlight:hover {
+  color: black;
+  background: none;
+  padding: 2px 5px 2px 5px;
+  margin: 0px 2px 0px 2px;
+  -webkit-transition: all 0.1s ease-in-out;
+  -moz-transition: all 0.1s ease-in-out;
+  -transition: all 0.1s ease-in-out; }
+
+/* line 317, /Users/flytoe/GitHub/portfolio/style.scss */
+disclaimer {
+  font-size: 10px; }
+
+/* line 321, /Users/flytoe/GitHub/portfolio/style.scss */
+.fullText a highlight {
+  color: white;
+  background: #0DC274;
+  padding: 6px 10px 6px 10px;
+  margin: 0px 2px 0px 2px;
+  line-height: 260%; }
+
+/* line 329, /Users/flytoe/GitHub/portfolio/style.scss */
+.fullText a highlight:hover {
+  color: white;
+  padding: 10px 10px 10px 10px;
+  margin: 0px 2px 0px 2px;
+  background: #0a9257;
+  -webkit-transition: all 0.05s ease-in-out;
+  -moz-transition: all 0.05s ease-in-out;
+  -transition: all 0.05s ease-in-out;
+  cursor: pointer; }
+
+/* line 340, /Users/flytoe/GitHub/portfolio/style.scss */
+.contactText {
+  margin-top: 30px;
+  color: black;
+  font-size: 14px;
+  line-height: 180%;
+  text-align: left;
+  margin-bottom: 25px; }
+
+/* line 349, /Users/flytoe/GitHub/portfolio/style.scss */
+#WorkContainer, #ExpertiseContainer {
+  position: relative;
+  margin-left: auto;
+  margin-right: auto;
+  max-width: 960px; }
+
+/* line 356, /Users/flytoe/GitHub/portfolio/style.scss */
+.WorkPost {
+  width: 45%;
+  background-color: white;
+  margin: 10px;
+  position: absolut;
+  margin-bottom: 5px;
+  float: left;
+  -webkit-border-radius: 0px;
+  -moz-border-radius: 0px;
+  border-radius: 0px;
+  -webkit-transition: left .2s ease-in-out, top .2s ease-in-out .2s;
+  -moz-transition: left .2s ease-in-out, top .2s ease-in-out .2s;
+  -ms-transition: left .2s ease-in-out, top .2s ease-in-out .2s;
+  -o-transition: left .2s ease-in-out, top .2s ease-in-out .2s;
+  transition: left .2s ease-in-out, top .2s ease-in-out .2s; }
+
+/* line 373, /Users/flytoe/GitHub/portfolio/style.scss */
+.clearBG {
+  background-color: white; }
+
+/* line 377, /Users/flytoe/GitHub/portfolio/style.scss */
+.WorkPost img {
+  display: block;
+  max-width: 100%; }
+
+/* line 383, /Users/flytoe/GitHub/portfolio/style.scss */
+.WorkPost h2, li span {
+  margin-left: 20px;
+  margin-right: 20px;
+  color: black;
+  font-size: 20px;
+  text-align: left;
+  margin-top: 20px; }
+
+/* line 392, /Users/flytoe/GitHub/portfolio/style.scss */
+.WorkPost h2 highlight {
+  color: black;
+  background: #FFF046;
+  padding: 2px 5px 2px 5px;
+  margin: 0px 2px 0px 2px;
+  -webkit-transition: all 0.1s ease-in-out;
+  -moz-transition: all 0.1s ease-in-out;
+  -transition: all 0.1s ease-in-out; }
+
+/* line 402, /Users/flytoe/GitHub/portfolio/style.scss */
+.WorkPost h2 highlight:hover {
+  color: black;
+  background: none;
+  padding: 2px 5px 2px 5px;
+  margin: 0px 2px 0px 2px;
+  -webkit-transition: all 0.1s ease-in-out;
+  -moz-transition: all 0.1s ease-in-out;
+  -transition: all 0.1s ease-in-out; }
+
+/* line 412, /Users/flytoe/GitHub/portfolio/style.scss */
+.WorkPost p {
+  position: relative;
+  margin-left: auto;
+  margin-right: auto;
+  max-width: 960px;
+  margin-top: 20px;
+  color: black;
+  font-size: 13px;
+  line-height: 180%;
+  text-align: left;
+  padding-left: 20px;
+  padding-right: 20px; }
+
+/* line 426, /Users/flytoe/GitHub/portfolio/style.scss */
+.profile {
+  height: 150px;
+  width: 150px;
+  border-radius: 100px;
+  background: url("img/profile.jpg") center center/cover no-repeat;
+  margin-left: auto;
+  margin-right: auto;
+  border: 5px solid white;
+  margin-top: -100px; }
+
+/* line 437, /Users/flytoe/GitHub/portfolio/style.scss */
+.tags {
+  font-size: 12px;
+  color: #C6C6C6;
+  padding: 10px 10px 10px 10px;
+  margin: 0px 2px 0px 2px;
+  text-align: left; }
+
+/*# sourceMappingURL=style.css.map */
