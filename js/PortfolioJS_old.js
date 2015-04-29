@@ -1,7 +1,7 @@
 var ascensor = $('#Work').ascensor({
     time: 300,
     easing: 'easeInOutCubic',
-    ascensorFloorName: ["About", "Process", "Work"],
+    ascensorFloorName: ["About", "Expertise", "Work"],
     direction: 'x',
     swipeNavigation: true,
     keyNavigation: true,
@@ -13,12 +13,12 @@ var ascensor = $('#Work').ascensor({
 var MenuCallback = function () {
     if (window.matchMedia('(max-width: 680px)').matches) {
         $("#menu-0 a").text("About Patric Sterrantino");
-        $("#menu-1 a").text("Process and Skills");
+        $("#menu-1 a").text("Expertise");
         $("#menu-2 a").text("Work");
     }
     if (window.matchMedia('(min-width: 681px)').matches) {
         $("#menu-0 a").text("Patric Sterrantino Interactiondesign");
-        $("#menu-1 a").text("Process and Skills");
+        $("#menu-1 a").text("Expertise");
         $("#menu-2 a").text("Work");
     }
 };
@@ -31,7 +31,7 @@ var toggleMenu = function () {
         easing: 'easeInOutCubic',
         duration: 250
     });
-    
+
     $(".show-menu").toggleClass("openIt");
     $(".global-header").toggleClass("fullscreen", 500);
     $(".floor").fadeToggle({
