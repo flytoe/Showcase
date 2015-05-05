@@ -367,9 +367,10 @@ disclaimer {
 /* line 377, /Users/flytoe/GitHub/portfolio/style.scss */
 .WorkPost img {
   display: block;
-  max-width: 100%; }
+  max-width: 100%;
+  margin-bottom: 4px; }
 
-/* line 383, /Users/flytoe/GitHub/portfolio/style.scss */
+/* line 384, /Users/flytoe/GitHub/portfolio/style.scss */
 .WorkPost h2, li span {
   margin-left: 20px;
   margin-right: 20px;
@@ -378,7 +379,7 @@ disclaimer {
   text-align: left;
   margin-top: 20px; }
 
-/* line 392, /Users/flytoe/GitHub/portfolio/style.scss */
+/* line 393, /Users/flytoe/GitHub/portfolio/style.scss */
 .WorkPost h2 highlight {
   color: black;
   background: #FFF046;
@@ -388,7 +389,7 @@ disclaimer {
   -moz-transition: all 0.1s ease-in-out;
   -transition: all 0.1s ease-in-out; }
 
-/* line 402, /Users/flytoe/GitHub/portfolio/style.scss */
+/* line 403, /Users/flytoe/GitHub/portfolio/style.scss */
 .WorkPost h2 highlight:hover {
   color: black;
   background: none;
@@ -398,7 +399,7 @@ disclaimer {
   -moz-transition: all 0.1s ease-in-out;
   -transition: all 0.1s ease-in-out; }
 
-/* line 412, /Users/flytoe/GitHub/portfolio/style.scss */
+/* line 413, /Users/flytoe/GitHub/portfolio/style.scss */
 .WorkPost p {
   position: relative;
   margin-left: auto;
@@ -412,7 +413,7 @@ disclaimer {
   padding-left: 20px;
   padding-right: 20px; }
 
-/* line 426, /Users/flytoe/GitHub/portfolio/style.scss */
+/* line 427, /Users/flytoe/GitHub/portfolio/style.scss */
 .profile {
   height: 150px;
   width: 150px;
@@ -423,7 +424,7 @@ disclaimer {
   border: 5px solid white;
   margin-top: -100px; }
 
-/* line 437, /Users/flytoe/GitHub/portfolio/style.scss */
+/* line 438, /Users/flytoe/GitHub/portfolio/style.scss */
 .tags {
   font-size: 12px;
   color: #C6C6C6;
