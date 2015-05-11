@@ -1,4 +1,83 @@
-html,body,div,span,applet,object,iframe,h1,h2,h3,h4,h5,h6,p,blockquote,pre,a,abbr,acronym,address,big,cite,code,del,dfn,em,img,ins,kbd,q,s,samp,small,strike,strong,sub,sup,tt,var,b,u,i,center,dl,dt,dd,ol,ul,li,fieldset,form,label,legend,table,caption,tbody,tfoot,thead,tr,th,td,article,aside,canvas,details,embed,figure,figcaption,footer,hgroup,menu,nav,output,ruby,section,summary,time,mark,audio,video {
+html,
+body,
+div,
+span,
+applet,
+object,
+iframe,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+a,
+abbr,
+acronym,
+address,
+big,
+cite,
+code,
+del,
+dfn,
+em,
+img,
+ins,
+kbd,
+q,
+s,
+samp,
+small,
+strike,
+strong,
+sub,
+sup,
+tt,
+var,
+b,
+u,
+i,
+center,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+legend,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td,
+article,
+aside,
+canvas,
+details,
+embed,
+figure,
+figcaption,
+footer,
+hgroup,
+menu,
+nav,
+output,
+ruby,
+section,
+summary,
+time,
+mark,
+audio,
+video {
     margin: 0;
     padding: 0;
     border: 0;
@@ -7,14 +86,36 @@ html,body,div,span,applet,object,iframe,h1,h2,h3,h4,h5,h6,p,blockquote,pre,a,abb
     list-style: none;
 }
 
-$font-stack: 'Armata', sans-serif;
-$colorMainOne: #0DC274;
+* {
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+}
 
+$font-stack: 'Armata',
+sans-serif;
+$colorMainOne: #373E48;
+$colorHighlight: #FFF046;
 body {
     background-color: white;
     font: 100% $font-stack;
     -webkit-overflow-scrolling: touch;
     overflow-scrolling: touch;
+}
+
+a {
+    color: #dd6b5f;
+    text-decoration: none;
+}
+
+a:hover {
+    color: black !important;
+    text-decoration: none;
+}
+
+a:visited {
+    color: #dd6b5f;
+    text-decoration: none;
 }
 
 .nextArrow {
@@ -43,28 +144,13 @@ body {
     cursor: default;
 }
 
-.moreProject {
-    color: black;
-    font-size: 12px;
-    background: rgba(255, 255, 255, 0.5);
-    margin-left: -2px;
-    padding: 15px 20px 15px 20px;
-    position: absolute;
-    top: 67%;
-}
-
-.moreProject:hover {
-    color: white;
-    background: $colorMainOne;
-    cursor: pointer;
-}
 
 .intro {
     background: url('img/work/conception.png') center center/cover no-repeat #dd6b5f;
 }
 
 .work {
-    background: rgb(240, 240, 240);
+    background: url('img/clients.png') center center no-repeat white;
 }
 
 .expertise {
@@ -187,7 +273,7 @@ mobile {
 
 .global-header {
     height: auto;
-    background: rgba(250, 250, 250, 1);
+    background: rgba(250, 250, 250, 0.95);
     margin: 0px;
     position: relative;
     z-index: 999;
@@ -237,14 +323,6 @@ mobile {
     cursor: pointer;
 }
 
-a:link {
-    text-decoration: none;
-}
-
-a:visited {
-    text-decoration: none;
-}
-
 .fullText {
     background: white;
     overflow: visible;
@@ -258,12 +336,11 @@ a:visited {
 }
 
 .topContainer {
-    background: rgb(240, 240, 240);
+    background: #F5F5F5;
     overflow: visible;
-    padding-top: 20px;
     position: absolute;
     height: auto;
-    top: 80px;
+    top: 62%;
     width: 100%;
     padding-bottom: 60px;
     cursor: default;
@@ -294,7 +371,7 @@ a:visited {
 
 .fullText p highlight {
     color: black;
-    background: #FFF046;
+    background: $colorHighlight;
     padding: 2px 5px 2px 5px;
     margin: 0px 2px 0px 2px;
     -webkit-transition: all 0.1s ease-in-out;
@@ -312,8 +389,6 @@ a:visited {
     -transition: all 0.1s ease-in-out;
 }
 
-
-
 disclaimer {
     font-size: 10px;
 }
@@ -330,7 +405,7 @@ disclaimer {
     color: white;
     padding: 10px 10px 10px 10px;
     margin: 0px 2px 0px 2px;
-    background: darken( $colorMainOne, 10% );
+    background: darken( $colorMainOne, 10%);
     -webkit-transition: all 0.05s ease-in-out;
     -moz-transition: all 0.05s ease-in-out;
     -transition: all 0.05s ease-in-out;
@@ -346,28 +421,23 @@ disclaimer {
     margin-bottom: 25px;
 }
 
-#WorkContainer, #ExpertiseContainer {
-    position: relative;
+#ExpertiseContainer {
     margin-left: auto;
     margin-right: auto;
     max-width: 960px;
 }
 
+#WorkContainer {
+    margin-left: auto;
+    margin-right: auto;
+    max-width: 1260px;
+}
+
 .WorkPost {
-    width: 45%;
-    background-color: white;
+    width: 400px;
     margin: 10px;
-    position: absolut;
-    margin-bottom: 5px;
     float: left;
-    -webkit-border-radius: 0px;
-    -moz-border-radius: 0px;
-    border-radius: 0px;
-    -webkit-transition: left .2s ease-in-out, top .2s ease-in-out .2s;
-    -moz-transition: left .2s ease-in-out, top .2s ease-in-out .2s;
-    -ms-transition: left .2s ease-in-out, top .2s ease-in-out .2s;
-    -o-transition: left .2s ease-in-out, top .2s ease-in-out .2s;
-    transition: left .2s ease-in-out, top .2s ease-in-out .2s;
+    background: white;
 }
 
 .clearBG {
@@ -380,48 +450,54 @@ disclaimer {
     margin-bottom: 4px;
 }
 
+.WorkPost a {
+    font-size: 13px;
+}
+
 .WorkPost h2,
 li span {
     margin-left: 20px;
     margin-right: 20px;
-    color: black;
-    font-size: 20px;
+    color: white;
+    font-size: 16px;
     text-align: left;
     margin-top: 20px;
+    background: #373E48;
+    display: table;
+    padding: 2px 5px 2px 5px;
 }
 
-.WorkPost h2 highlight {
-    color: black;
-    background: #FFF046;
+.WorkPost h2:hover {
+    margin-left: 20px;
+    margin-right: 20px;
+    color: white;
+    font-size: 16px;
+    text-align: left;
+    margin-top: 20px;
+    background: #dd6b5f;
+    display: table;
     padding: 2px 5px 2px 5px;
-    margin: 0px 2px 0px 2px;
-    -webkit-transition: all 0.1s ease-in-out;
-    -moz-transition: all 0.1s ease-in-out;
-    -transition: all 0.1s ease-in-out;
 }
 
-.WorkPost h2 highlight:hover {
-    color: black;
-    background: none;
-    padding: 2px 5px 2px 5px;
-    margin: 0px 2px 0px 2px;
-    -webkit-transition: all 0.1s ease-in-out;
-    -moz-transition: all 0.1s ease-in-out;
-    -transition: all 0.1s ease-in-out;
-}
 
 .WorkPost p {
-    position: relative;
-    margin-left: auto;
-    margin-right: auto;
-    max-width: 960px;
-    margin-top: 20px;
-    color: black;
     font-size: 13px;
-    line-height: 180%;
+    line-height: 160%;
     text-align: left;
-    padding-left: 20px;
-    padding-right: 20px;
+}
+
+
+.PostUrl {
+    position: relative;
+    margin-left: 0px;
+    max-width: 960px;
+    top: 0px;
+    text-align: left;
+    display: inherit;
+}
+
+.description {
+    display: none;
 }
 
 .profile {

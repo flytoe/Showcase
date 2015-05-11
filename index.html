@@ -70,12 +70,6 @@
 
         <article class="floor intro">
             <h1 class="headlineMobile"><p>Patric Sterrantino</p></h1>
-            <a href="https://www.xing.com/profile/Patric_Sterrantino/" target="_blank">
-
-                <div class="moreProject">
-                    My profile on Xing
-                </div>
-            </a>
 
             <div class="fullText">
                 <div class="profile"></div>
@@ -90,7 +84,7 @@
                     <highlight><img src="img/awards/awardif.png"></img> iF design award </highlight>
                     <highlight><img src="img/awards/awardpf.png"></img> descom </highlight>
                     <br>
-                    <br>If you are interested in working with me just contact me:</p>
+                    <br>If you are interested in working with me just contact me in german or english:</p>
 
                 <p class="contactText">
                     <a href="call:00491624167467">+49 162 4167 467</a>
@@ -112,10 +106,11 @@
         <article class="floor expertise">
             <h1 class="headlineMobile"><p>Expertise</p></h1>
             <div class="fullText">
-
-                <div id="ExpertiseContainer" class="js-masonry" data-masonry-options='{ "itemSelector": ".WorkPost" }'>
+                
+                <div id="ExpertiseContainer">
+                
                     <div class='WorkPost clearBG'>
-                        <h2><highlight>Conception</highlight></h2>
+                        <h2><highlight>Research + Conception</highlight></h2>
                         <p>After analysing the problem and emphasising with the end user-persona, I focus on the user's needs and requirements to aim the most comfortable way of using a product or service. Flowcharts and wireframes enable me to create early insights of the story the product is telling.</p>
                     </div>
 
@@ -129,14 +124,14 @@
                         <p>UI Design defines how a hardware or software product looks, feels and behaves to the users input, responding on the users context and needs. From low-tech wearables over Mobile Devices and Desktop-Software to highend Industry Machinery.</p>
                     </div>
 
-                    <div class='WorkPost clearBG'>
+ <!--                   <div class='WorkPost clearBG'>
                         <h2><highlight>Interactive Installations</highlight></h2>
                         <p>The challenge of developing interactive environments that tell a story in a three-dimensional space is a continually evolving field, drawing on innovative, creative and practical solutions and experimental techniques. It's goal is to develop experiences that will resonate with diverse audiences — enabling these targeted audiences to access the messages of the stories or objects.</p>
-                    </div>
+                    </div>-->
 
                     <div class='WorkPost clearBG'>
-                        <h2><highlight><> Development Support</highlight></h2>
-                            <p> I guide and support the development of the product until it's alive.</p>
+                        <h2><highlight>Development Support</highlight></h2>
+                            <p>I guide and support the development of the product until it's alive to get a high quality final product.</p>
                     </div>
 
                 </div>
@@ -147,17 +142,20 @@
         <article class="floor work">
             <h1 class="headlineMobile"><p>Work</p></h1>
             <div class="fullText topContainer">
-                <div id="WorkContainer" class="js-masonry" data-masonry-options='{ "itemSelector": ".WorkPost" }'>
+                <div id="WorkContainer" class="js-masonry"
+                     data-masonry-options='{ "columnWidth": 420, "itemSelector": ".WorkPost", "percentPosition": true }'>
+                    <div id="tumblr"></div>         
                 </div>
             </div>
 
-            <script>
-                $('#WorkContainer').tumblrFeed({
+           <script>            
+                $('#tumblr').tumblrFeed({
                     tumblrUsername: "sterrantino",
                     apikey: "Vsz7WWciTHuF0UHE7TXmVLCLselJLU4qDLdgSRfhow8qGUb3a3",
                     postLimit: 50
                 });
             </script>
+
 
         </article>
     </section>

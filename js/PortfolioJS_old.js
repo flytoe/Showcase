@@ -71,8 +71,3 @@ $(".next").on('click', function () {
 $(".show-menu").on('click', function () {
     toggleMenu();
 });
-
-var $WorkContainer = $('#WorkContainer');
-$WorkContainer.masonry({
-    itemSelector: '.WorkPost'
-});
