@@ -25,14 +25,24 @@
 
   <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
   <link rel="stylesheet" href="style.css" type="text/css" media="screen">
-  <link href="http://fonts.googleapis.com/css?family=Titillium+Web:400,300,200,700,600' rel='stylesheet' type='text/css">
   <script src="js/analytics.js"></script>
   <script src="http://code.jquery.com/jquery-2.0.3.min.js"></script>
   <script src="js/jquery.ascensor.min.js"></script>
   <script src="js/jquery.easing.1.3.js"></script>
   <script src="js/touche.min.js"></script>
   <script src="js/masonry.pkgd.min.js"></script>
+  <script type="text/javascript" src="js/retina.min.js"></script>
+  <script type="text/javascript" src="js/jquery.simple-text-rotator.js"></script>
 
+  <script>
+    $(document).ready(function(){
+      $(".rotate").textrotator({
+        animation: "fade", //dissolve, fade, flip, flipUp, flipCube, flipCubeUp, spin.
+        speed: 200,
+        speed2: 5000
+      });
+    });
+  </script>
   <!--[if IE]>
 <script src="https://cdn.jsdelivr.net/html5shiv/3.7.2/html5shiv.min.js"></script>
 <script src="https://cdn.jsdelivr.net/respond/1.4.2/respond.min.js"></script>
@@ -83,8 +93,8 @@
 
       <div class="fullText col-md-12">
         <div class="profile"></div>
-        <h2>Hello, I am Patric Sterrantino</h2>
-        <p>I am a freelancer for interactiondesign located in Stuttgart, Germany. I love solving complex problems and guide you through a user centered design process. I have
+        <h2>Hello, I am a <br><span class="rotate">UX-Designer, UI-Designer, Interaction-Designer, Prototyper, Thinker, Tinkerer, Problem-Solver, Concepter, Supporter, Enthusiast</span> </h2>
+        <p>I am Patric Sterrantino, a freelancer for interactiondesign located in the innvoative city Stuttgart in Germany. I love solving complex problems and guide you through a user centered design process. I have
           <a href="#Expertise">
             <highlight>expertise</highlight>
           </a> in mobile App Design, Web-Services, Software UI Design and Embedded Systems, to create meaningful user interfaces responding to the users needs.
@@ -95,9 +105,9 @@
               <highlight>
                 <img src="img/awards/awardrd.png"> Red Dot Award </highlight>
               <highlight>
-                <img src="img/awards/awardif.png"> iF design award </highlight>
+                <img src="img/awards/awardif.png"> iF Design Award </highlight>
               <highlight>
-                <img src="img/awards/awardpf.png"> descom </highlight>
+                <img src="img/awards/awardpf.png"> German Design Award Nominee </highlight>
             </p>
           </div>
           
@@ -125,18 +135,28 @@
       <h1 class="headlineMobile">
         <p>Expertise</p>
       </h1>
-      <div class="fullText col-md-12">
+      <div class="fullText col-md-12 topContainerWhite">
 
-        <h2>What I usually do</h2>
+        <h2>Because I am a <br><span class="rotate">UX-Designer, UI-Designer, Interaction-Designer, Prototyper, Thinker, Tinkerer, Problem-Solver, Concepter, Supporter, Enthusiast</span></h2>
 
-        <p>First of all I analyse the problem to solve and emphatize with the end user-persona. Next I focus on the user's needs and requirements to aim the most comfortable way of using a product or service. Wireframes and iterative prototoypes enable to fail in early stages and shape insights of the story the product is telling. I call this the <color>UX-Conception & Prototyping</color> pahse.</p>
+        <p>My goal ist to simplify processes and procedures with a solid concept and  structure with good <color>UI-Design</color> deccisions. I analyse and emphatize with the end user-persona to understand what the user needs and requires to accomplish his task. Wireframes and iterative prototoypes enable me to fail in early stages and shape insights of the story the product is telling. I call this the <color>UX-Conception & Prototyping</color> pahse.</p>
           
-        <p class="quote">"I love, exploring new ways and possibilities of interacting with stuff to improove and redefine current mindsets to create joyfull and successful user experiences with meaningful user interfaces."</p>
+        <p class="quote">"I love, exploring new ways and possibilities of interacting with stuff to improove and redefine current mindsets to create joyfull and successful user experiences with meaningful user interfaces of products and services."</p>
 
         
-        <p>If the concept is bulletproof, the <color>UI-Design</color> begins. It defines how a hardware or software product looks, feels and behaves to the users input, responding on the users context and needs. From low-tech wearables over Mobile Devices and Desktop-Software to highend Industry Machinery and Embedded Devices.</p>
+        <p>I defines how a hardware or software product looks, feels and behaves to the users input, responding on the users context and needs. From low-tech wearables over Mobile Devices and Desktop-Software to high-end Industry Machinery and Embedded Devices.</p>
         
-        <p>Finally I <color>guide and support the development</color> of the product until it's alive to get a high quality final product.<br><br></p>
+        <p>I really love code and good products. That’s why I guide and<color> support development</color> of the product until it's alive to get the high quality we fought for.<br><br></p>
+        <div class="awards">
+          <p>
+            <highlight>
+              <img src="img/awards/awardrd.png"> Red Dot Award </highlight>
+            <highlight>
+              <img src="img/awards/awardif.png"> iF Design Award </highlight>
+            <highlight>
+              <img src="img/awards/awardpf.png"> German Design Award Nominee </highlight>
+          </p>
+        </div>
         <div class="contact">
 
           <p class="contactText">
